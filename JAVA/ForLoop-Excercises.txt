@@ -1,0 +1,53 @@
+1. Write a program to print numbers from 1 to 10 using a for loop.
+2. Write a program to print all even numbers between 1 and 50.
+3. Write a program to calculate the sum of numbers from 1 to 100.
+4. Write a program to display the multiplication table of a given number.
+5. Write a program to print numbers from 10 to 1 in reverse order.
+6. Write a program to find the factorial of a given number.
+7. Write a program to print all elements of an integer array using a for loop.
+8. Write a program to find the largest number in an array.
+9. Write a program to count the number of digits in a given number.
+10. Write a program to print all prime numbers between 1 and 100.
+11. Write a program to print the following star pattern:
+
+*
+**
+***
+****
+*****
+
+12. Write a program to print the following number pattern:
+
+1
+12
+123
+1234
+
+13. Write a program to print the following reverse star pattern:
+
+*****
+****
+***
+**
+*
+
+
+14. Write a program to print the first n numbers in the Fibonacci series.
+
+15. Write a program to print a 10 × 10 multiplication table.
+
+16. Write a program to check whether a given number is a palindrome.
+
+17. Write a program to find the sum of digits of a given number.
+
+18. Write a program to check whether a given number is an Armstrong number.
+
+19. Write a program to print the following pyramid pattern:
+
+    *
+   ***
+  *****
+ *******
+
+
+20. Write a program to print all numbers between 1 and 100 that are divisible by both 3 and 5.
