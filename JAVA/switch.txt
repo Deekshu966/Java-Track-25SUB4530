@@ -1,0 +1,79 @@
+Java 8 and Earlier (Classic / Traditional Switch)
+-------------------------------------------------
+switch (value) {
+    case 1:
+        System.out.println("One");
+        break;
+    case 2:
+        System.out.println("Two");
+        break;
+    default:
+        System.out.println("Invalid");
+}
+
+
+
+Java 12 (Preview) / Java 14 (Standard)
+➤ Switch Expression (Arrow Syntax)
+
+int day = 2;
+
+String result = switch (day) {
+    case 1 -> "Monday";
+    case 2 -> "Tuesday";
+    default -> "Invalid day";
+};
+
+System.out.println(result);
+
+
+
+Java 13 (Preview) – yield Keyword
+----------------------------------
+int marks = 85;
+
+String grade = switch (marks / 10) {
+    case 9, 10 -> "A";
+    case 8 -> {
+        System.out.println("Good performance");
+        yield "B";
+    }
+    default -> "Fail";
+};
+
+Java 14+ – Multiple Case Labels
+--------------------------------
+int day = 6;
+
+String type = switch (day) {
+    case 1, 2, 3, 4, 5 -> "Weekday";
+    case 6, 7 -> "Weekend";
+    default -> "Invalid";
+};
+
+
+
+Java 17 (LTS) – Pattern Matching (Preview)
+------------------------------------------
+Object obj = "Hello";
+
+String result = switch (obj) {
+    case Integer i -> "Integer value: " + i;
+    case String s -> "String value: " + s;
+    default -> "Unknown type";
+};
+
+
+Java 19–20 (Preview) – Pattern Matching Enhancements
+----------------------------------------------------
+Object obj = 25;
+
+String result = switch (obj) {
+    case Integer i && i > 18 -> "Adult";
+    case Integer i -> "Minor";
+    default -> "Unknown";
+};
+
+
+
+

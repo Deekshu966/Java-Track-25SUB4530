@@ -1,0 +1,430 @@
+Primary Memory
+-------------
+
+1. Stack  ---> Which will contain frequent items and may change often
+   Eg> Local  Variable, Object References
+
+int x; 
+
+Car c = new Car();
+
+
+2. Heap  ---> Which are rarely used but most important objects
+Eg> Objects, Instance variables of a class, 
+
+3. Method Area  ---> Which  stores the items for sharing
+Eg> Static Variables, Method Declarations, Class Declarations
+
+4. Cache -- Small fast accessible areas
+5. Register -- Even more small area
+
+
+
+
+
+4. Cache
+
+5. Registers
+
+All programing lang ---> Primary memory for their programs
+
+
+
+Secondary memory
+------------------
+--> permanent
+
+
+
+JDK 2.0 --- > 1995
+
+JDK 4.0
+
+
+
+JDK 8.0 ---> Program lang features
+
+Performance, multiprocessing, functional programming
+
+
+JDK 11  [production]
+
+
+JDK17 [production] ---> working version
+
+
+JDK 21 [production]
+
+
+
+JDK 25 ---> 2025
+
+
+class Hello{
+
+	public static void main(String args[]) {
+		System.out.println("Hello World..!");
+	}
+}
+
+java8
+
+
+javac Hello.java --compile-> Hello.class --generates-> java Hello ---> Hello World..!
+
+
+System.out.println("Hello World..!");
+
+
+
+python> print("Hello World..!")
+
+
+
+Primitive Data Types  ---simple and predefined data types
+
+byte x;
+
+x = 100;
+x = 329990;
+
+
+1. byte ---> numeric --> intergers 1 byte(8 bits) ---> -127 to +127 (range)
+2. int---> numeric ---> 4 bytes (32 bit) ---> -2147483648 to + 2147483647
+3. float -- numeric with decimals --> 4 bytes --> +10-203
+4. short --numeric ---> 2 bytes --> -32768 to 32767
+5. double  --numeric  with decimals --> -pow(10,-308) to pow(10,308)
+6. char -- Characters ---> 2 bytes --> any charcaters
+7. Boolean-- true/false ---> 1bit  --> 0/1
+
+
+
+Non Primitive Data Types -- Complex and stores the address not data directly
+we have both predefined and user defined
+
+Ex> Objects, Arrays, Strings, Interfaces, Enum, Classes
+
+
+datatypename variablename;
+
+int x;
+float y;
+double z;
+char ch;
+Boolean flag;
+
+The sum is : <value>
+
+a =10
+b =20
+
+The sum of <avalue> and <bvalue> is <cvalue>
+The sum of 10 and 20 is 30
+
+a=100
+b=200
+The sum of 100 and 200 is 300
+
+
+
+
+System.out.println("string");
+
+
+Java -- Arthimetic --> +, - , /, %, ^
+Relational --> > , < , >=, <=, != , ==
+
+
+a= 10
+b =20
+
+a == b ( false)
+a = b  (Assignment) the value of b is assigned to a
+
+
+
+a = 20
+b = 20
+
+
+a == b (Comparsion, the value of a is compared b)
+
+
+Logical Operators --> && , || , !
+
+To combine two or more conditions
+
+(a < b )  && (c < d)  -> 
+(a < b )  || (c < d)
+
+
+C1 	C2 	C1 && C2
+
+T	T	T
+T	F	F
+F 	T	F
+F	F	F
+
+
+C1 	C2 	C1 || C2
+
+T	T	T
+T	F	T
+F 	T	T
+F	F	F
+
+Control Statements
+--------------------
+
+Control statements are those statements which will transfer the control from one part of the
+program to another part of the program
+
+s1
+s2
+s3
+s4
+s5
+s6
+It will neither skip any line nor go back to previous line and execute
+
+Types of Control Statements - 
+
+1. Conditional Based -- transfer of control is based on a condition
+Ex> if, switch, loops ( while, do..while, for)
+
+
+2. Unconditional Based -- it won't check any condition
+Ex> goto, break, continue
+
+
+
+if -- It is a conditional based control statement used to select the statement based on condition
+
+forms of if;
+
+1. Simple If
+2. If .. Else
+3. Nested if
+4. Else if 
+
+Simple If
+---------
+Syntax:
+
+if (condtion){
+	true_block;
+}
+statements;
+
+if the above condition is true then only true_block will be executed, else true_block will be
+skipped
+
+a = 10;
+b = 20;
+
+if ( a < b){
+	System.out.println("Inside the block");
+}
+System.out.println("outside the block");
+
+output
+------
+Inside the block
+outside the block
+
+int a = 10;
+int b = 20;
+
+if ( a > b){
+	System.out.println("Inside the block");
+}
+System.out.println("outside the block");
+
+output
+------
+outside the block
+
+
+
+
+2. If .. Else
+-------------
+Syntax:
+------
+
+if (condtion){
+
+	true_block_statements;
+}
+else {
+	false_block_statements;
+}
+next_statements;
+
+int a = 10;
+int b = 20;
+
+if (a < b )
+	System.out.println("A is lesser");
+else
+	System.out.println("B is lesser");
+System.out.println("After the if clause");
+
+3. Nested If
+--------------
+
+if inside an if
+
+Syntax:
+------
+
+if (condtion1){
+	if(condition2){
+		S1 block;
+	}
+	else{
+		s2 block:
+	}
+}
+else {
+	if(condtion3){
+		s3 block;
+	}
+	else {
+		s4 block;
+	}
+}
+
+condtion1 -->T and Condtion2-T --> s1 block
+condition1 --> T and condition-2 F --> s2 block
+Condtion 1 --> F and condtion -2 T --> s3 block
+condition 1 --> F and condition -2 F --> s4 block
+
+
+else if ladder
+--------------
+
+if (cond1)
+	s1;
+else if (cond2)
+	s2;
+else if (cond3)
+	s3
+else if (cond4)
+	s4
+;
+;
+;
+else if (cond n-1)
+	sn-1;
+else
+	sn
+
+sn+1
+
+
+switch-- which can select one block out of n blocks
+
+switch(var/value){
+	case value1 : statements; break;
+	case value2 : statements; break;
+	case value3 : statements; break;
+;
+;
+	case valuen : statements;break
+	default: statments;
+}
+
+
+
+Loop- Loops are the statements which will repeat the given statements for fixed number of
+times.
+
+
+
+
+System.out.println("Hello");
+
+While loop - Entry controlled, conditional based loop
+
+syntax:
+
+while(cond){
+	statements;
+}
+next_statement;
+
+
+int i = 1;
+while( i < 5){
+	System.out.println("Hello");
+	i++;
+}
+System.out.println("After loop");
+
+Hello
+Hello
+Hello
+Hello
+After loop
+
+
+do.. while
+
+do{
+	statements:
+
+}
+while(cond);
+
+Exit controller loop;
+
+int i = 10;
+do{
+	System.out.prinltn("HellO");
+}while(i>=20);
+
+While and do while --> condition based
+
+for loop is counter based ;
+
+
+Syntax:
+
+for(init;cond;inc/dec){
+	statements;
+}
+
+for(int i=1; i<10; i++)
+	System.out.println("Hello");
+}
+
+Hello
+Hello
+Hello
+;
+;
+;
+Hello
+
+for(var i=1; i<10; i++)
+	System.out.println("Hello");
+}
+
+int values = [1,2,3,4,5]
+for(int x: values){
+	System.out.println("Hello");
+}
+
+int values = [-1,0,31,41,-15]
+for(int x: values){
+	System.out.println("Hello");
+}
+
+
+
+
+
+
+
+
