@@ -1,0 +1,92 @@
+Strings
+-------
+A string is a group of characters
+
+names, products, email, address
+
+Strings ---> char array  ---> every manipulation need to implemented by the users
+ or developers
+
+In Java string is a class type
+
+class can have some predefined methods, by using them the strings can be processed
+more  effectively and  efficiently.
+
+numbers(without decimals)---> int, short, byte, long 
+numbers with decimals--> float, double
+true or false -- Boolean
+group of chars (String) ----> String, StringBuffer, StringBuilder --= classes (Complex Structure) 
+
+
+Strings can be handled in 3 ways:
+
+1. String
+2. StringBuffer
+3. StringBuilder
+
+
+String -- In java string is a immutable object
+
+Immutable means data cannot be changed
+
+int s;
+float x;
+
+String str;
+str = "Hello";
+
+int x;
+x = 10;
+
+String name="Kumar";
+int y = 20;
+
+String str1 = new String("Hello");
+String str2 = new String("Hai");
+System.out.println(str1) ----> Hello
+System.out.println(str2)---> hai
+System.out.println(str1+str2); ---> Hellohai
+
+
+String name = "Hari";
+System.out.println(name);
+name = "Hai "+name;
+System.out.println(name); // Hai Hari
+
+
+
+In java Strings will follow String Pool concept, means memory will not be
+allocated to the variables with same values. 
+
+If any change is detected, then it will create a  new reference
+
+
+int x=20;
+x++;
+int y =20;
+
+
+String str = "Hello";
+System.out.println(str);
+str  = "Hai "+str; // Hai Hello
+
+
+
+String str1 = "Hello";
+System.out.println(str1);
+
+str1 = "Bye";
+
+
+
+Strings are not thread safe  ---> Strings does support multithreading performance
+
+
+
+
+
+
+
+
+
+
