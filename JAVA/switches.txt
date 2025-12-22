@@ -249,8 +249,11 @@ z= {1,2,3,0,0}
 Arrays.copyOfRange(array,beginIndex,endIndex) --> it copies the values from beginIndex to
 endIndex -1 into a new array.
 
-
-
+toList() ---> the given array into a list
+stream() ---> the given array into a stream
+deeptToString() 
+deepEquals()
+Collections
 
 
 
