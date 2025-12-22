@@ -38,7 +38,7 @@ public class SwitchExample {
 				};
                 System.out.println("Grade: " + grade);
                 
-                
+                /*
                 Object obj = "Hello";
                 String str = new String("Hello");
                 Integer i=  new Integer(10);
@@ -49,8 +49,7 @@ public class SwitchExample {
                     default -> "Unknown type";
                 };
                 System.out.println(result1);
-
-
+			*/
 	}
 
 }

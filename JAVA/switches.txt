@@ -1,6 +1,14 @@
-What Is an Array? (Very Simple Definition)
+What Is an Array? 
 
-An array in Java is:
+An array in Java is a collection of homogenous(Same) data items.
+
+int x=10;
+
+x = 2090;
+
+Any single variable can store only one value at any given time
+
+
 
 A container that stores multiple values of the same type under one name, 
 in continuous memory locations.
@@ -10,6 +18,8 @@ Real-Life Example
 Imagine:
 
 Roll numbers of students
+
+int htno1, htno2, htno3, htno4......;
 
 Marks of students
 
@@ -21,8 +31,11 @@ int m1, m2, m3, m4;
 
 We use one array:
 
+
+datatype[] array_name;
 int[] marks;
 
+int x1, x2, x3, x4;
 
 Why Do We Need Arrays?
 -----------------------
@@ -55,7 +68,7 @@ Syntax
 ------
 datatype[] arrayName;
 
-
+int marks;
 int[] marks;
 String[] names;
 double[] prices;
@@ -74,6 +87,7 @@ This creates:
 An array of size 5
 Default values assigned automatically
 
+int x = 5; //intialization
 
 Array Initialization
 --------------------
@@ -82,6 +96,16 @@ Method 1: Static Initialization
 
 int[] nums = {10, 20, 30, 40};
 
+
+nums[-1]----> RuntimeError called ArrayIndexOutOfBoundsException
+nums[0]---> 10
+nums[1]---> 20
+nums[2]---> 30
+nums[3]--> 40
+nums[4] ----> Runtime Error called ArrayIndexOutOfBoundsException
+
+
+int[] nums = {10,20}
 
 ✔ Size automatically decided
 ✔ Most commonly used
@@ -92,6 +116,9 @@ Method 2: Dynamic Initialization
 int[] nums = new int[4];
 nums[0] = 10;
 nums[1] = 20;
+nums[2] --> allowed
+nums[3] --> allowed
+nums[4] ---> Not Allowed, throws ArrayIndexOutOfBoundsException
 
 ✔ Size fixed
 ✔ Values assigned later
@@ -138,6 +165,10 @@ int[][] matrix = {
     {3, 4}
 };
 
+matrix[0][0] ---> 1
+matrix[0][1] ---> 2
+matrix[1][0] ---> 3
+matrix[1][1] ---> 4
 To access elements:
 matrix[0][1]; // 2
 
@@ -156,6 +187,75 @@ int[][] jagged = new int[3][];
 jagged[0] = new int[2];
 jagged[1] = new int[4];
 jagged[2] = new int[1];
+
+
+int[] marks = new int[4];
+int[][] box = new int[3][3];
+int[][][] squares= new int[2][3][3];
+
+
+Jagged Array
+---------------
+int[][] a= new int[3][];
+
+
+a[0]= new int[2];
+a[1]=new int[4];
+a[2]= new int[2];
+
+
+
+
+1. insert an element to an array
+2. delete an element from an array
+3. search for an element in an array
+4. sort the elements in an array
+5. compare two array
+6. copy one array values to another
+
+C, C++ --> explicitly programmed by user to perform any operations on arrays
+
+Arrays ---> java.util.Arrays;
+
+
+1. sort() ---> sort the given array values in ascending order
+
+2. toString() --> convert the given array into a string
+
+3. binarySearch(array,value) --> used to search the given value in the array
+
+4. equals --> used to compare two given arrays with values not refernces
+
+int [] a = {1,2,3}
+int[] b = {2,3,4}
+
+equals(a,b) ---> false
+
+a = {1,2,3}
+b = {1,2,3}
+
+equals(a,b) --> true
+
+
+5. copyOf() --> used to copy the contents from one array to another array
+
+int x[] = {1,2,3};
+int y[] = Arrays.copyOf(x);---> y = {1,2,3}
+
+z= Arrays.copyOf(x,5) ---> increase the given array size to  5
+
+z= {1,2,3,0,0}
+
+Arrays.copyOfRange(array,beginIndex,endIndex) --> it copies the values from beginIndex to
+endIndex -1 into a new array.
+
+
+
+
+
+
+
+
 
 
 
