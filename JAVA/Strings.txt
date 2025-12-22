@@ -81,10 +81,27 @@ str1 = "Bye";
 
 Strings are not thread safe  ---> Strings does support multithreading performance
 
+String Methods
+--------------
+1. length() --> length of the string including blank spaces
+String str = "hello";
+2. charAt()
+3. equals()
+4. compareTo() -- is to compare to strings as per chronological order
+return +ve or -ve or 0 values
+
+if str1 comes after str2 in alphabetical order ---> +ve value
+if str1 comes later str2 in alpabetcical order ---> -ve value
+if str1 == str2 then it returns zero value
 
 
+5. substring()
 
 
+Optional --> Introducted in JDK8 --> java.util.Optional;
+To avoid the null pointer exceptions
+
+Optional<String> str = null;
 
 
 
