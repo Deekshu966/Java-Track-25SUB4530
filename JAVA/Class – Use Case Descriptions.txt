@@ -1,0 +1,31 @@
+Class – Use Case Descriptions
+-----------------------------------
+A Student class represents the structure of student data in a school system.
+A Car class defines common properties and behaviors for all cars in a driving simulation.
+A BankAccount class models how bank accounts should store and manage account details.
+A GameCharacter class represents different characters in a video game.
+
+
+2. Object – Use Case Descriptions
+---------------------------------
+A specific student enrolled in Grade 10 is an object created from the Student class.
+A red sports car owned by a user is an object of the Car class.
+A user’s savings account is an object of the BankAccount class.
+A player’s avatar in a game is an object of the GameCharacter class.
+
+
+
+3. Constructor – Use Case Descriptions
+-------------------------------------
+Automatically initializes a student’s default values when a new student record is created.
+Sets initial balance to zero when a new bank account is opened.
+Assigns default settings when a game character is created.
+Prepares a new device with standard configuration when it is registered.
+
+
+4. Parameterized Constructor – Use Case Descriptions
+-----------------------------------------------------
+Creates a student record with a name and roll number at the time of admission.
+Opens a bank account with a starting balance and account holder name.
+Creates a car object with brand, model, and color specified.
+Initializes a game character with health level and weapon type chosen by the player.

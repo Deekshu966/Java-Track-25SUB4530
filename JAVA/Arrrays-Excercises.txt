@@ -1,11 +1,14 @@
 Assignments on Arrays
 ---------------------
-1. Write a program to calculate the average of array elements.
+1. Write a program to calculate the average of array elements.{10,20,30,40,50}
 2. Write a program to find the largest element in an array.
 3. Write a program to count the total number of elements in an array.
-4. Write a program to print duplicate elements in an array.
-5. Write a program to remove duplicate elements from an array.
+4. Write a program to print duplicate elements in an array. {10,20,30,10,20,40}--> 10,20
+5. Write a program to remove duplicate elements from an array.---> {10,20,30,40}
 7. Write a program to find the second largest element in an array.
-8. Write a program to merge two arrays.
-9. Write a program to find the frequency of each element in an array.
+8. Write a program to merge two arrays. {1,2,3,4}+ {5,6,7,8}---> {1,2,3,4,5,6,7,8}
+9. Write a program to find the frequency of each element in an array. 10->2, 20->2, 30->1, 40->1
 10. Write a program to check whether two arrays are equal. (Without using predefined method)
+
+ a1 = {1,2,3,4} 
+ a2 = {1,2,3,4} a1 == a2
