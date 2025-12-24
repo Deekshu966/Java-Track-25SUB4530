@@ -1,6 +1,6 @@
 package oops;
 
-public class TestInheritance {
+public class TestInheritance extends Object{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

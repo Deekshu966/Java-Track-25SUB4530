@@ -1,6 +1,6 @@
 package oops;
 
-public class Base {
+public class Base extends Object{
 	
 	int x;
 	int y;
@@ -14,4 +14,5 @@ public class Base {
 		System.out.println("Y: " + y);
 	}
 
+	
 }
