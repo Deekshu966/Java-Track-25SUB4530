@@ -1,0 +1,109 @@
+1. School Management System (with static members)
+Problem Statement
+
+A school keeps track of people. Each person has a name and age.
+The school also wants to keep track of the total number of people in the school.
+
+
+Static variable counts total persons
+Static method displays total count
+
+Structure
+------------
+Person (base class)  	- name, age
+
+			- static int totalPeople
+
+			- static method getTotalPeople()
+
+Student (child) 	- rollNumber, grade
+
+Teacher (child) 	- subject, salary
+
+
+2. Vehicle System (with static members)
+
+Problem Statement
+-------------------
+A transport company manages vehicles and wants to know how many vehicles are registered in total.
+
+Structure
+---------
+Vehicle
+ 	- speed, fuelType
+
+	- static int vehicleCount
+
+	- static method showVehicleCount()
+
+Car
+
+	- numberOfDoors
+
+Bike
+
+	- hasCarrier
+
+Truck
+
+	- loadCapacity
+
+Each time a vehicle object is created, vehicleCount increases.
+
+
+
+3. Banking System (with static interest rate)
+---------------------------------------------
+Problem Statement
+------------------
+All savings accounts in a bank follow the same interest rate, which is managed centrally.
+
+Structure
+
+BankAccount
+
+	- accountNumber, balance
+
+	- static String bankName
+
+SavingsAccount
+
+	- static double interestRate
+
+	- static method changeInterestRate()
+
+CurrentAccount
+
+	- overdraftLimit
+Static interest rate is shared by all savings accounts.
+
+
+4. Employee Payroll System (with static company info)
+-----------------------------------------------------
+Problem Statement
+
+A company wants to store employee details and maintain a company-wide tax percentage.
+
+Structure
+
+Employee
+
+	- id, name
+
+	- static String companyName
+
+	- static method displayCompanyName()
+
+Manager
+
+	- bonus
+
+Developer
+
+	- overtimePay
+
+Intern
+
+	- stipend
+Company name is common for all employees.
+
