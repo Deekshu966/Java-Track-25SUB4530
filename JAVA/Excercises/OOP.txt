@@ -1,0 +1,290 @@
+1. While creating the object, class needs a constructor
+
+
+
+
+1. If a constructor is not defined in the class, then Java will provide a default constructor
+internally. --> by using that default constructor object is created.
+
+
+2.If we define any type of constructor, then java will take userdefined constructor
+ to create the object
+
+
+PolymorphismS
+------------
+
+The ability of an entity to exist in more than one form is called polymorphism
+
+1. Compiletime Polymorphism --> Constructor Overloading ---> Method Overloading
+
+
+Method Overloading - When two or more functions have same name and if differs in the 
+number or datatype of parameters, then they are called overloaded
+
+public void f1(){
+
+}
+
+public void  f1(int x){
+
+}
+
+public void f1(int x, int y){
+
+
+}
+
+
+
+public void f1(int x){
+
+}
+
+public void f1(int ch, int z){
+
+}
+
+public void f1(float y){
+
+}
+
+
+
+
+public int f1(int x){
+
+}
+
+public float f1(int y){
+
+}
+
+public char f1(int z){
+
+}
+
+return type is not at all considered for overloading
+
+
+Operator Overloading 
+
++ ----> 3 + 4 
+
+sop("Hello" + "Hai" );---> Hello Hai
+
+public void f1(int x){
+
+}
+
+f1(10);----> 
+f1(false); ---> error
+f1("hello");---> error
+f1(3.456); ---> truncate the decimal part --> f1 will receive 3 (not correct)
+
+
+
+System.out.println(); ---> to print on the console / output
+
+System.out.println("Hello"); ---> Hello
+System.out.println(4);----> 4
+System.out.println(false) ---> false
+System.out.println(3.245f) --> 3.245
+
+
+
+
+
+2. Runtime Polymorphism  - the form to be selected  will be known only at the time of
+execution / runtime
+
+
+--> Inheritance 
+
+static keyword can be applied on a method also, when a method is static, then this method
+can be called directly on the class without creating the object
+
+
+static methods 			non static method
+
+
+
+
+
+static variables		non static variables
+
+
+1. a non static method can access both static variables and non static variables (instance )
+
+2. a static method can access only static variables
+
+
+Static is at class level (Parent)
+
+Non static is at object level (Child)
+
+Any static can be called without creating the object
+
+ie a static variable or a static method can be called without creating an object
+
+
+but a non static variable or non static method can be called only on the object, it
+cannot be called on the class
+
+
+
+Office -----> PermanentEmployee, TemporaryEmployee, HourlyBased
+
+
+class PermanentEmployee{
+	int empid;
+	String name;
+	String dept;
+	double basic;
+	double deductions
+	public void calSalary(){
+		//calculate the salry
+		sal = (basic+0.55 + basic*0.25) -deductions
+	}
+	public void display(){
+		// display the details
+	}
+}
+
+class TemporaryEmployee{
+	int empid;
+	String name;
+	String dept;
+	double conSal;
+	public void calSalary(){
+		//calculate the salary of 25k
+	}
+	public void display(){
+		// display the details
+		
+	}
+}
+
+
+class HourlyBasedEmployee{
+	int empid;
+	String name;
+	String dept;
+	int noh;
+	double rph;
+	public void calSalary(){
+		sal = noh * rph;
+	}
+	public void display(){
+		// display the details
+	}
+}
+
+
+// code repition 
+
+// code reusability ---> inheritance
+
+Inheritance -- It is the process of acquiring the properties from one class to another class
+The class which is giving properties is called as a base class / parent class
+The class which is acquiring / taking properties is called as a derived class / child class
+Inheritance is used for code reusability
+
+
+class Employee{
+	int empid;
+	String name;
+	String dept;
+	public void display(){
+		// display the details
+	}
+}
+
+
+class PermanentEmployee extends Employee{
+	int basic;
+	int deductions
+	public void calSalary(){
+	// cal sal code 
+	}
+
+
+}
+
+PermanentEmployee pe = new PermanentEmployee();
+pe.empid
+pe.name
+pe.dept
+pe.basic
+pe.deductions
+pe.calSalary()
+pe.dipslay()
+
+class TemporaryEmployee extends Employee{
+
+	double conSal;
+	public void calSalary(){
+		//calculate the salary of 25k
+	}
+}
+
+TemporaryEmployee te = new TemporaryEmployee();
+te.empid
+te.name
+te.dept
+te.conSal
+te.calSalary()
+te.display()
+
+
+class HourlyBasedEmployee extends Employee{
+	int noh;
+	double rph;
+	public void calSalary(){
+		sal = noh * rph;
+	}
+}
+
+HourlyBasedEmployee he = new HourlyBasedEmployee();
+he.empid
+he.name;
+he.dept
+he.noh
+he.rph
+he.calSalary()
+he.display()
+
+
+Diff types of inheritances
+
+1. single inheritance
+2. multilevel inheritance
+3. multiple inheritance
+4. hybrid inheritance
+5. hirerachal inheritance
+
+Java supports ----> Single Inheritance, Multilevel Inheritance, Multiple Inheritance(Interface)
+
+Overriding
+
+1. Data Overriding
+2. Method Overriding
+
+
+
+Data Overriding - The process of suppressing the base variable value in the derived class
+when both are having the same names
+
+
+super --> super is a keyword used to represent its immediate parent
+
+Method Overriding -- the process of suppressing the base class method in the derived
+class when both are having the same signature;
+
+
+
+
+
+
+
+
