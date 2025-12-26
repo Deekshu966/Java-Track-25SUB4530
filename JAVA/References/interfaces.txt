@@ -1,0 +1,365 @@
+
+
+
+class Employee{
+
+	public void method1(){
+		//logic
+	}
+	public void method2(){
+		//logic
+	}
+}
+
+Employee e1 = new Employee();
+e1.method1();
+e1.method2();
+
+Employee e2 = new Employee();
+e2.method1();
+e2.method2();
+
+
+100, n number o f objects
+
+
+
+class Shop{
+
+	public void selectItems(){
+		System.out.println("Items were selected manually from shop");
+	}
+	public void payment(){
+		System.out.println("Cash Payment");
+	}
+	public void shipment(){
+		System.out.println("items to be carried with customer only");
+	}
+}
+
+
+Shop village = new Shop();
+Shop town =new Shop();
+Shop city = new Shop();
+
+
+village.selectItems();
+village.payment();
+village.shipment():
+
+
+
+town.selectItems();
+town.payment();
+town.shipment();
+
+
+
+city.selectItems();
+city.payment();
+city.shipment();
+
+
+Interfaces
+----------
+
+Interface is an java entity, which contains all abstract methods;
+
+An abstract method is a method which does not contain method definition / body
+
+public void shipment();  --> abstract method
+
+interfaces start with keyword called "interface"
+
+syntax:
+
+interface <interfacename>{
+	// all  abstract methods;
+}
+
+
+
+// interfaces will define the rules also
+
+Objects cannot be created directly for interfaces, all interfaces are immature entities
+	
+
+implements is keyword used for extending interfaces methods
+
+Method Overriding - It is the process of suppressing base class method in the derived class
+when both are having the same signature
+
+
+interface Shop{
+	public void selectItems();
+	public void payment();
+	public void shipment();
+}
+
+
+class VillageShop implements Shop{
+
+	public void selectItems(){
+		System.out.println("Items were selected manually from shop");
+	}
+	public void payment(){
+		System.out.println("Cash Payment");
+	}
+	public void shipment(){
+		System.out.println("items to be carried with customer only");
+	}
+}
+
+
+VillageShop v1 = new VillageShop();
+v1.selectItems();
+v1.payment();
+v1.shipment();
+
+
+class A{
+
+	int x;
+	int y;
+	A(){
+	   x=10;
+	   y = 20;
+	}
+	public void display(){
+		SOP(x+" "+y);
+	}
+
+}
+
+class B extends A {
+	int x;
+	int y;
+	B(){
+	 x = 300;
+	 y = 400;
+	}
+	public void display(){
+		SOP(x+" "+y);
+	}
+}
+
+B b = new B();
+b.display();
+
+// abstract classes 
+
+class CityShop implements Shop{
+
+	@Override // to check whether the same method from base class is overridden or not
+	public void selectItems(){
+		System.out.println("Items were selected manually from shop / from web or mobiles application");
+	}
+	@Override
+	public void payment(){
+		System.out.println("Cash / UPI / CC / DC payments are allowed ");
+	}
+	@Override
+	public void shipment(){
+		System.out.println("items to be carried with customer  / home delivered");
+	}
+}
+
+
+CityShop c1 = new CityShop();
+c1. selectItems();
+c1.payment();
+c1.shipment();
+
+
+
+class TownShop implements Shop{
+
+	@Override // to check whether the same method from base class is overridden or not
+	public void selectItems(){
+		System.out.println("Items were selected manually from shop / from web or mobiles application");
+	}
+	@Override
+	public void payment(){
+		System.out.println("Cash / UPI / DC payments are allowed ");
+	}
+	@Override
+	public void shipment(){
+		System.out.println("items to be carried with customer  / home delivered");
+	}
+}
+
+
+TownShop t = new TownShop();
+t.selectItems();
+t.payment():
+t.shipment();
+
+Interfaces defines a rule.
+
+Till JDK7 an interface is strictly with abstract methods, ie we cannot write the method
+def in the interfaces
+
+JDK8 interfaces allow method definitons in the form default or static methods
+
+Points to note in interface
+-----------------------------
+1. constructors cannot be defined in interfaces
+2. Variables cannot be defined in the interfaces
+3. final variables (constants) are allowed
+4. If any variable is initialized in the interfaces, then it will become automatically a 
+   final variable.
+5.  Every method in interface is a public method even though we don't explicity define it as public
+
+final int x = 10;
+x++; // error
+
+final is an access specifier can be applied on three levels:
+
+1. variable -- The variable becomes constant, so its value cannot be changed.
+
+2. method ---> This method cannot be overridden in the child classes
+
+3. class --> This class cannot be used for inheritance
+
+
+class Test{
+	int x;
+	int y;
+	static int z;
+	void test(){
+	}
+	static void test1(){
+	}
+}
+
+Test t1 = new Test();
+Test.z = 100 ; valid
+Test.test1(); valid
+t1.z= 10; valid
+t1. test1(); valid
+
+Test t2 = new Test();
+Test.z = 300; valid
+Test.test1(); valid
+t2.z=200; valid
+t2.test1(); valid
+
+
+
+All Object will have diff memory spaces for Instance variables only
+All objects have the same memory space for the methods
+
+
+
+static 
+
+either variable or method can be called directly on the class name / it can be called on the object
+also
+
+
+Static methods in the interface can be called only on  the interface, but not on the
+implemented / child classes
+
+We can have any number of default and static methods
+
+Lambda Expressions
+------------------
+
+Lambda expressions are short form expression for representing the methods to have in 
+functional program way
+
+JDK8 --> OOP + Functional Programing 
+
+Lamdba expressions are anonymous method without having method name, access modifier
+or return  type.
+
+public void display(){
+	System.out.println("Hello");
+}
+
+
+() -> {
+	System.out.println("Hello");
+}
+
+public void greet(String name){
+	System.out.println("Hello "+name+" Welcome");
+}
+
+
+(String name) -> {
+	System.out.println("Hello "+name+" Welcome");
+}
+
+
+1. In the lambda expression parameter datatypes are not  required
+
+
+(name) -> {
+	System.out.println("Hello "+name+" Welcome");
+}
+
+2. In the lambda expression if the body has only one statement, then {} isnot required
+
+(name) -> System.out.println("Hello "+name+" Welcome");
+
+3. In the lambda expression if there is only one parameter, then () also not required
+
+
+name -> System.out.println("Hello "+name+" Welcome");
+
+public int add(int a, int b){
+	return a+b;
+}
+
+(a,b) -> return a+b;
+
+4. In the lambda expressions, if there is only one statement, and if it is a return statement
+then return keyword is also not required.
+
+(a,b) -> a+b; 
+
+
+public Boolean check(int n){
+
+	if (n%2==0)
+		return true;
+	else
+		return false;
+}
+
+
+
+n -> {
+
+	if (n%2==0)
+		return true;
+	else
+		return false;
+}
+
+
+n -> n%2 ==0 ;
+
+public int fact(int n){
+	int f=1;
+	for(int i=2;i<=n;i++)
+		f=f*i;
+	return f;
+}
+
+n -> {
+	int f=1;
+	for(int i=2;i<=n;i++)
+		f=f*i;
+	return f;
+};
+
+
+
+
+
+
+
+
+
