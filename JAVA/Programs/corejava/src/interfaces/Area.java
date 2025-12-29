@@ -16,7 +16,7 @@ public interface Area {
  * 
  * }
  * 
- * radius -> 3.14*radius*radius;
+ * (radius) -> 3.14*radius*radius;
  * 
  * AreaImpl area = new AreaImpl();
  * double result = area.calCircleArea(5);

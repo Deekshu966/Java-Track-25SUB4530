@@ -1,12 +1,13 @@
 package oops;
 
+import interfaces.Order;
 public class RelationsExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Order order = new Order();
-		order.placeOrder();
+		//order.placeOrder();
 
 		Address address = new Address();
 		System.out.println(address);

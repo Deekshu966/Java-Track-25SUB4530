@@ -355,6 +355,52 @@ n -> {
 	return f;
 };
 
+Why do I need a lambda expression ? 
+lambda  expressions are used to implement a functional interfaces
+
+A functional interface is an interface which has only one abstract method.
+
+@FunctionalInterface
+interface Maths{
+	public int add(int a, int b);
+}
+
+
+@FunctionalInterface
+interface  Area{
+	public double calArea(int radius);
+	public  double volume(int length, int breadth,  int height);
+}
+
+JDK8 onwards
+
+
+Inheritance -- 
+
+1. Multiple Inheritance -- Interfaces
+
+
+class
+
+
+class A extends  ClassB, Class C ---> not allowed
+
+class extends class, class ----> Invalid
+
+class implements interface1, interface2 --> valid
+
+class extends class implements interface ---> valid
+
+class implements interface extends class ---> Invalid
+
+interface implements interface ---> Invalid
+
+interface extends interface ---> valid
+
+interface extends interface1,interface1 -->valid
+
+
+
 
 
 
