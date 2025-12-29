@@ -1,6 +1,8 @@
 package collections;
 
-public class Employee {
+import java.util.Objects;
+
+public class Employee implements Comparable<Employee>{
 	
 	int empid;
 	String empname;
@@ -44,6 +46,29 @@ public class Employee {
 	public String toString() {
 		return "Employee [empid=" + empid + ", empname=" + empname + ", empsal=" + empsal + ", dept=" + dept + "]";
 	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(dept, empid, empname, empsal);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return Objects.equals(dept, other.dept) && empid == other.empid && Objects.equals(empname, other.empname)
+				&& Double.doubleToLongBits(empsal) == Double.doubleToLongBits(other.empsal);
+	}
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		return -(this.empname.compareTo(o.empname));
+	}
+	
+	
 	
 
 }
