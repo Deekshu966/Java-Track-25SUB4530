@@ -80,6 +80,83 @@ remove(int index) --> remove the element at the given index
 indexOf(Object e)--> returns the index for the given object
 
 
+import java.util.*;---->util package for collections
+
+
+
+public boolean check(int n){
+	if(n%4==0)
+		return true;
+	else
+		return false;
+}
+
+
+n -> n%4 == 0;
+
+
+Collections class
+----------------
+Utility methods for the collection framework
+
+The collections class contains static methods to perform common operations such
+as sorting, searching, reversing, synch and creating unmodifiable collections
+
+Key characteristics
+
+1. collections class contains only static methods
+2. cannot be instantiated
+3. works on existing any collection object
+
+1. sort() -- used to sort the given the values in the ascending order (default)
+
+
+
+
+Set
+---
+Set is a collection sub class
+
+HashSet
+--------
+1. It will not allow duplicates
+2. Insertion order is not maintained
+3. null values are allowed only once
+4. Elements are arranged in random manner
+5. elements cannot be accessed by its index
+
+
+LinkedHashSet --> all properties of hashset or set except the insertion order is maintained
+
+
+1. not allow duplicates
+2. insertion order is maintained
+3. null values are allowed only once
+4. elements are arranged in linear fashion
+5. elements cannot be accessed by its index
+
+
+
+TreeSet
+------
+1. not allow duplicaes
+2. insertion order is not maintained
+3. null values are allowed only once
+4. elements are not arranged in linear fashion
+5. elemets cannot be access by its index.
+6. displays the elments in the sorted order
+
+
+
+
+
+ Override the hashCode and Equals method
+
+In Java two objects are considered to be equal only when both of them
+have same reference hashcode and same contents
+
+
+
 
 
 
