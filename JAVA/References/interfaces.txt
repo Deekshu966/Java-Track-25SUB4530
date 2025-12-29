@@ -402,6 +402,233 @@ interface extends interface1,interface1 -->valid
 
 
 
+Modular Programming
+-------------------
+
+The divide the project into modules
+
+Modular programming is an approach where a large program / project is divided into smaller
+independent, reusable units called modules
+
+
+Testing will be easier with modules
+
+
+
+Java supports modular programming 
+1. Methods
+2. classes
+3. packages
+4. Java Modules (JDK9 ) onwards
+
+
+
+
+
+Mathematics
+1. add, sub, mul, div
+
+public int add(){
+
+}
+public int sub(){
+
+}
+
+
+
+class Mathematics{
+
+
+
+}
+
+class ComplexNumbers{
+
+
+}
+
+class RealNumbers{
+
+
+
+}
+
+
+
+
+
+public 
+private
+protected
+      (default)
+
+
+
+Exception Handling
+------------------
+Exceptions are runtime errors
+
+It is the process of handling the runtime errors
+
+
+to read a file from the c drive and display its contents on monitor
+
+
+s1
+s2
+s3 --> read file f1.txt from c drive --FileNotFoundException
+s4
+s5
+
+
+When exceptions are araised, then our program execution will stop at that point
+
+
+
+int c = a/b; (b!=0)  10/0 ---> Inderminant 
+System.out.println(c); Runtime Error
+
+Strig str = "Hai";
+
+str.charAt(1) ---> a
+str.chatAt(10) ---> RuntimeError ---> StringIndexOutOfBoundsException
+
+int[] a = {1,2,3};
+
+Sop(a[1]);----> 2
+sop(a[10]);----> ArrayIndexOutOfBoundsException
+
+
+
+try{
+// opening a file
+// write the code which may get runtime errors
+
+}
+catch(ExceptonObject){
+	// code to execute when runtime error occurs
+
+
+}
+finally{
+	// finally execute irrespective of errors
+	// close file
+}
+next_statements;
+
+
+
+1. If there is no error --> try --> finally --> next_statments
+
+2. If error occurs and corresponding catch block available --> try -->catch--> finally --> next_statments
+
+3. If error occurs and no corresponding catch block available --> try --> finally --> stops
+execution
+
+
+Object
+ |
+ |
+Throwable ---> Error( Not handled)
+ |
+ |
+Exception
+ |-> IOException
+ |-> InstantiationException
+ |-> InitializationExeption
+ |-> ClassNotFoundException
+ |-> InterruptedException (checked Exception)
+ |-> RuntimeException (Unchecked Exception)
+	|->ArithmeticException
+	|->IndexOutOfBoundsException
+		|->ArrayIndexOutOfBounds
+		|->StringIndexOutOfBounds
+	|->NullPointerExcpetion
+
+(Predefined or System defined exeptions)
+
+
+class B extends A{
+
+}
+
+
+class ArithmeticException extends RuntimeException{
+
+
+}
+
+
+
+
+A child reference can be given to parent
+
+Shop s = new CityShop();
+
+
+
+A child exception should always be before the parent
+
+A parent exception should always be after the child
+
+
+Only one try block is not suggested while programing
+
+multiple try catch blocks
+
+
+Throws and Throw
+
+
+throws is a keyword used to send / redirect the exception object without handling in the 
+current block 
+
+
+throw is a keyword which used to explicitly throw an exception object without having the
+exeption condition raised 
+
+
+
+throw keyword is used For creating the user defined exceptions
+
+
+
+
+
+input age 
+
+age <---read value from keyboard
+
+if age >=18 then eligible to vote
+
+age<18 not eligible to vote
+
+
+
+-ve value or >100 both are invalid ages as per human beings
+
+
+
+user defined exceptions
+
+How to create user defined exceptions
+
+1. write a class which will inherit from either exception / runtimexception
+
+
+class InvalidAgeException extends RuntimeException{
+
+public InvalidAgeException(){
+	super("Age Cannot be negative or more than hundred");
+}
+
+}
+
+
+
+
+
 
 
 

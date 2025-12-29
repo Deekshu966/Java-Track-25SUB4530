@@ -1,0 +1,90 @@
+Collections
+-----------
+
+collections are objects used to store, manipulate and retrieve group of data as a
+single unit dynamically.
+
+Array
+-----
+
+1. Fixed Size
+int[] a = new int[10]; --> we store only 10 values
+int[] b = new int[150]; --> 
+
+
+2. No much built in methods for processing -- Arrays' class 
+
+3. No Type saftely ( Old Java) -- homogenous we cannot mix diff data types
+
+4. Poor flexibility - Diff insert / delete an array value in between
+
+
+
+Collection of Objects
+---------------------
+1. dynamic in size
+2. plenty of builtin methods
+3. Type Saftey - Heterogenous data types
+4. high flexibility and performance
+
+
+
+To organize diff types of group of objects, java has introduced collection framework
+
+The collection framework is a set of interfaces, classes and algorithms that 
+provide a standard way to store and process the data
+
+
+G1
+G2
+G3
+G4
+G5
+
+
+interfaces --> define the behavior
+classes ---> Implement the behavior
+Algorithms --> methods for processing the data (sorting, searching, shuffling)
+
+
+Methods in Collection interface
+--------------------------------
+
+1. add() --> add an element to the collection
+
+2. remove() --> remove an element from the collection
+
+3. size() --> return the no of elements in the collection
+
+4. contains() --> find an element in the collection
+
+
+
+LIST (interfaces)
+----
+1. It will allow duplicate elements
+2. Insertion order is maintained
+3. elements are stored in linear fashion
+4. elements are retrieved through its index
+5. null values are allowed
+6. elements can be inserted in between the group
+
+ArrayList --> implemented by using Arrays
+
+LinkedList ---> implemented by using LinkedList 
+
+add(int index, element e) -- add the element at the given index
+get(int index)  ---> retrieve the element from the given index
+set(int index, element e) -- update the element at the given index
+remove(int index) --> remove the element at the given index
+indexOf(Object e)--> returns the index for the given object
+
+
+
+
+
+
+
+
+
+
