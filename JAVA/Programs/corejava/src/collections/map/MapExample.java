@@ -1,17 +1,21 @@
 package collections.map;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class MapExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Map<String,String> states = new HashMap<>();
+		//Map<String,String> states = new HashMap<>();
+		//Map<String,String> states = new LinkedHashMap<>();
+		Map<String,String> states = new TreeMap<>();
 		states.put("KA", "Karnataka");
 		states.put("TG",  "Telengana");
 		states.put("TN", "Tamilnadu");
+		states.put("AP", "Andhra Pradesh");
+		states.put("KL", "Kerala");
 		System.out.println(states);
 		
 		states.put("KA", "Karnataka-New");

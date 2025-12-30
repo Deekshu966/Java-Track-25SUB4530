@@ -67,6 +67,8 @@ Map<String,String> states = new HashMap<>();
   states.put("TN", "Tamilnadu");
 
 
+  e--> ("KA","Karnataka")
+
 2. get(key) --> to retrieve the value for the given key
 
    states.get("TG") --> Telengana
@@ -96,7 +98,7 @@ in the map
    states.isEmpty() --> false
 
 
-6. keys() ---> return all the keys in the form of set
+6. keySet() ---> return all the keys in the form of set
 
    states.keys() --> ("KA","TG", "TN");
 
@@ -104,9 +106,20 @@ in the map
    states.values() --> {"Karnataka","Telengana", "Tamilnadu"}
 
 
+for Traversing the Map
+-----------------------
+entrySet() ---> reutrns all the entries in the form of set
+
+states.entrySet()
+
+{ ("KA","Karnatak"), ("TG", "Telengana"), ("TN", "Tamilnadu")}
 
 
+HashMap -- Stores the entries in the random manner
 
+LinkedHashMap-- stores the entries in the insertion order
+
+TreeMap -- stores the entries in the sorted order of keys
 
 
 
