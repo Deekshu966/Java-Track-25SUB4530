@@ -1,6 +1,6 @@
 package collections.list;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayListExample {
@@ -8,8 +8,8 @@ public class ArrayListExample {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//List ar = new ArrayList();
-		List ar = new LinkedList();
+		List ar = new ArrayList();
+		//List ar = new LinkedList();
 		ar.add(100);
 		ar.add(200);
 		ar.add("India");

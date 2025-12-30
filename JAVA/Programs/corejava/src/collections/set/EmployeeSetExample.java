@@ -13,7 +13,7 @@ public class EmployeeSetExample {
 		Employee emp2 = new Employee(1001, "Bob", 60000, "hr");
 		Employee emp3 = new Employee(1003, "Charlie", 70000, "it");
 		Employee emp4 = new Employee(1005, "David", 80000, "finance");
-		Employee emp5 = new Employee(1005, "Eve", 90000, "it");
+		Employee emp5 = new Employee(1006, "Eve", 90000, "it");
 		Employee emp6 = new Employee(1006, "Eve", 90000, "it");
 		// Employee emp6 = emp5;
 
