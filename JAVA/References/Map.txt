@@ -1,0 +1,112 @@
+List -- group of duplicate
+
+Set -- group of unique values
+
+Queue -- perform operations
+
+All these were single dimensional objects - They will store just values
+
+
+Q1 to Q4 -- FY April to March
+
+2024 - 100 80 76 126
+
+2023 - 87 79 88 100
+
+Cricket  - 5 games
+
+player1 - 10,25,9,30,24
+
+player2 - 24,19,20,31,21
+
+
+Map
+---
+Is two dimensional data structure, values are stored in the form of (key,value) pair
+
+
+keys are unique objects and values can be duplicated objects
+
+
+TS, Telengana --> entry
+KA, Karnataka --> entry
+TN, Tamilnadu--> entry
+AP, AndhraPradesh
+
+Map is a collection of entries
+
+A, "Excellent"
+B, "Good"
+C, "Average"
+D, "Worst"
+
+
+Map ---> HashMap, LinkedHashMap, TreeMap, HashTable (legacy) 
+
+
+Every value in Map is stored in the form of (key,value)
+
+
+
+HashMap
+--------
+1. stores the data in the form of (k,v) pair, this (k,v) pair is called entry
+2. No insertion is guaranteed
+3. One null key is allowed
+4. It is fast in performance
+
+Map<T1,T2> mapobject = new HashMap<>();
+Map<String,String> states = new HashMap<>();
+
+
+
+1. put(key,value) ---> to add an entry to the map
+
+  states.put("KA", "Karnataka");
+  states.put("TG",  "Telengana");
+  states.put("TN", "Tamilnadu");
+
+
+2. get(key) --> to retrieve the value for the given key
+
+   states.get("TG") --> Telengana
+   states.get("KA")---> Karnataka
+
+
+3. remove(key) ---> to remove an entry based on the key
+   states.remove("AP")--> remove AndhraPradesh from the states
+
+
+
+4. containsKey(key) ---> to check the given key exists in the set of all keys in map
+   states.containsKey("TG");
+
+5. containsValue(value) --> to check the given value exists in the list of all values
+in the map
+
+   states.containsValue("Telengana");  --> true if Telengana exists in the list of all values
+
+
+6. size() --> count the number of entries --> 
+
+   states.size(); --> 3
+
+   isEmpty() --> returns true if no entries found else returns false
+
+   states.isEmpty() --> false
+
+
+6. keys() ---> return all the keys in the form of set
+
+   states.keys() --> ("KA","TG", "TN");
+
+7. values() --> return all the values in the form of list
+   states.values() --> {"Karnataka","Telengana", "Tamilnadu"}
+
+
+
+
+
+
+
+
