@@ -14,16 +14,23 @@ public class FlightDaoImpl implements FlightDao {
 	}
 
 	@Override
-	public int addFlight(Flight flight) {
+	public boolean addFlight(Flight flight) {
 		// TODO Auto-generated method stub
-		flights.add(flight);
-		return 0;
+		return flights.add(flight);
+		
 	}
 
 	@Override
 	public List<Flight> searchFlights(String source, String destination) {
 		// TODO Auto-generated method stub
-		return null;
+		List<Flight> result	= new ArrayList<>();
+		for (Flight f : flights) {
+			if (f.getSource().equalsIgnoreCase(source) && f.getDestination().equalsIgnoreCase(destination)) {
+				result.add(f);
+				
+			}
+		}
+		return result;
 	}
 
 	@Override
@@ -43,6 +50,13 @@ public class FlightDaoImpl implements FlightDao {
 		// TODO Auto-generated method stub
 		
 		//return flights.set(0, flight)
+		
+		for (int i = 0; i < flights.size(); i++) {
+			if (flights.get(i).getFlightid() == flightid) {
+				flights.set(i, flight);
+				return true;
+			}
+		}
 		return false;
 	}
 

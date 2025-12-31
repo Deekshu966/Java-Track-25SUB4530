@@ -6,7 +6,7 @@ import flightproject.model.Flight;
 
 public interface FlightService {
 	
-	public int addFlight(Flight flight);
+	public boolean addFlight(Flight flight);
 	public List<Flight> searchFlights(String source, String destination);
 	public void deleteFlight(int flightid);
 	public List<Flight> getAllFlights();
