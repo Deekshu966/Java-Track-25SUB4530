@@ -142,16 +142,43 @@ else
 	
 
 
-3. jump search ----->
+3. jump search -----> Linear + Binary
+
+jump size 
+
+directly jump to the jump size and compares 
+
+10 20 30 40 50 60 70 80 90 100
+
+search = 80
+jumpsize = sqrt(n) --> sqrt(10)-->3
+
+a[0]--10
+a[3] -- 40
+a[4]--50
+a[5]
+a[6]-- 70
+
+
+1. Jump search is useful when the data is represented in block 
+2. Random access is expensive
+3. 
+
+
+Time complexity for the jump search --.
+Best case = O(1) 
+Avg  case -  O(sqrt(n))
+
+Binary search, this is not fast
 
 Sorting 
 -------
-1. sort() ---> it is a method in collections class provides the soritng functionality
+1. sort() ---> it is a method in collections class provides the sorting functionality
 
 1. bubble sort
 2. quick sort
 3. merge sort
-4. bucket sort
+4. heap sort
 
 Strategies
 
@@ -164,7 +191,42 @@ Non Linear Structures
 1. Trees - types of trees - traversing - application
 2. Graph -- types of graphs - traverse - applications
 
+Sorting is the process of arranging the values either in the increasing value
+or decreasing value
+
+Bubble Sort -- Exchange Sort --  very slow in performance
+
+[5,1,4,2,8]
+
+1,5,4,2,8
+
+1,4,5,2,8
+
+1,2,5,4,8
+
+1,2,4,5,8--> final sorted array
+
+Best case - already all elements are in sorted order  - O(n)
+
+Worst case - O(n2) 5, 4, 3, 2, 1
+
+Avg case - O(n2) 
+
+public int bubbleSort(int[] x
 
 
+Merge sort
+----------
+ It follows divide and conquer strategy
+
+
+Complexity of Merge Sort
+
+
+1. Best --> O(n log n)
+
+2. Average --> O( nlogn)
+
+3. Worst ----> O( n log n)
 
 
