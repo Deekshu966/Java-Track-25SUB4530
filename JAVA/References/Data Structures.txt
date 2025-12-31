@@ -229,4 +229,39 @@ Complexity of Merge Sort
 
 3. Worst ----> O( n log n)
 
+Quick Sort
+------------
+
+[10,7,8,9,1,5]---> unsorted array
+10 7 8 9 5 1
+first, last , random
+
+[1 5 10 7 8 9]
+
+[1] 5 [10 7 8 9]
+
+[1] 5 [7 8 9 10]
+
+[1] 5 [7 8] 9 [10]
+
+[1 5 ] [ 7 8 ] [9 10]
+
+[1 5 7 8 ] [ 9 10]
+
+[1 5 7 8 9 10 ]
+
+Recursion and Divide and Conquer 
+
+Time Complexities
+
+1. Best case O(n log n)
+2. Average case is O(n log n)
+3. worst case : O(n2)
+
+Adv:
+1. very fast 
+2. in place sorting
+3. cache friendly
+4. Widely used tech in many pre defined methods Arrays.sort()--> Quick
+
 
