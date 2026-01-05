@@ -265,3 +265,134 @@ Adv:
 4. Widely used tech in many pre defined methods Arrays.sort()--> Quick
 
 
+Trees and Graphs
+---------------
+These are non linear DS which are most widely used in databases, filesystems, 
+compilers, search engines and networkings
+
+
+family hierarchy -- tree
+File System --- Tree
+
+route from given source to destination - Graph
+
+Tree is a non linear DS consisting of nodes, where
+one node is desginated as root (a node which does not any predecesors)
+every other node have child nodes
+There are no cycles 
+
+Terminologies:
+---------------
+1. root - Top most node which has no predecesors
+
+2. Parent -- Node that has a children
+
+3. child - Node emerged from other node
+
+4. leaf - node which doesnot have any children
+
+5. siblings - nodes with same parent
+
+6. Edge - path connecting two nodes
+
+7. Level - depth from root
+
+8. Height -Max depth of tree
+
+9. subtree -- Tree formed from any node
+
+
+Types of Trees
+--------------
+
+1. General Tree
+
+2. Binary Tree - every node has at most 2 children only
+
+3. Binary Search Tree --> all the left node values must be less than the 
+root and right node values must be greater than the root
+
+4. Balanced Trees ( AVL, Red-Black)
+
+
+5. Heap Tree (Min / Max heap)
+
+6. Trie -- Strings
+
+Moving from one node to another node in tree is called Traversals
+
+Three types of traversals
+
+1. InOrder--> visit Left node --> root ---> visit right node
+2. PreOrder ---> vist root ---> left ----> right
+3. PostOrder --> left --> right ---> root
+
+InOrder --> 12,25,50,75,100
+
+PreOrder ->50, 25, 12, 75,100
+
+PostOrder -> 12, 30, 25, 60, 100, 75, 50
+
+
+
+Node --> create a class where data, ref to the same class as left and right
+
+
+
+Binary Search Tree
+-------------------
+
+BST may become un balanced while inserting nodes into it
+
+
+Red-Black Trees and AVl Trees, these are called self balancing trees
+
+
+AVL (Adelson-Velsky-Landis)
+---------------------------
+An AVL is a self balancing binary search tree, where the height diff between left and right
+subtrees of any node is at most 1
+
+
+balance factor = diff of left height and right height of sub trees
+
+How do this will make as balanced
+
+AVl tree uses rotations to adjust the tree to be balance
+
+LL Rotations
+	- Insertion in the left subtree of left child
+	- Fix this with Right Rotation
+RR Rotations
+	- Insertion in right subtree of right child
+	- Fix this with left Rotation
+LR Rotations
+	- Left child -> right insertion
+	- Fixed with Left and Right rotations
+RL Rotations
+	- Right Child -> left insertion	
+	- Fixed with Right and left rotations
+
+
+search  -- O(log n)
+
+insert - O(log n)
+
+delete - O (log n)
+
+
+opertions on avl tree - insert, delete, search, rotations, traversals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
