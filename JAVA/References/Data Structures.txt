@@ -383,6 +383,45 @@ delete - O (log n)
 
 opertions on avl tree - insert, delete, search, rotations, traversals
 
+Red - Black Tree
+---------------
+
+A Red-Black tree is a binary search tree in which each node has either red or black 
+color and the tree maintains balances using these colors and rotations
+
+
+Rules to be followed for Red-Black Trees
+
+1. Every node is either red or black
+2. The root is always black
+3. no two red nodes can be adjacent
+4. every path from a node to its descendant null nodes has the same number of black nodes
+5. all null (leaf) nodes are considered as black.
+
+
+
+We will make tree balanced by recoloring and use rotations on when it is mandatory
+
+Rotations we use are - Left Rotation or Right Rotation ( rotations depends on
+Parent color and uncle color)
+
+
+Applications of Red Black Trees
+
+1. Event Driven Systems
+2.  Memory Management Systems
+3. Networking
+4. Compilers and Interpretors
+5. Database indexes
+6. OS process scheduling
+
+
+
+
+
+
+
+
 
 
 
