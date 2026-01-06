@@ -416,18 +416,236 @@ Applications of Red Black Trees
 6. OS process scheduling
 
 
+Heap Tree
+---------
+A heap tree is a complete binary tree satisfies the heap property
+
+All levels are completly filled except possibly the last and nodes are filled 
+from let to right.
+
+
+
+Heap Trees - 1. Min Heap and 2. Max Heap
+Operations - insert ( Heapify up) 2. delete , Heapify 
+
+index formula to construct the trees
+
+1. Parnet   (i-1)/2 child
+2 lef child - 2i+1
+
+2. right child - 2i+2
+
+10 20 15 30 40
+
+
+10
+
+
+Graphs
+------
+A graph is a non linear DS consisting of set of vertices and edges
+
+G = (V,E)
+
+V = (v1,v2,v3,v4...vn)
+E = (e1,e2, e3, e4...en)
+
+Where are graphs used:
+
+1. social networking
+2. computer networking
+3. web page navigation
+4. google maps
+
+Terminology:
+
+1.Vetex - Individual element
+2. edge - Path connecting any two vertices
+3. Degree - Number of edges connected to a vertex
+4. Path - Sequence of vertices
+5. cycle - Path that starts and ends at same vertex
+
+Types of Graphs
+
+1. Un directed graphs - Edges have no direction, connection is two-way
+
+2. Directed Graph - Edges have a direction, one -way direction
+
+3. weighted Graph  - every edge has some cost / value
+
+4. un weighted graph - All edges have the same weight
+
+5. connected graph - Every vertex is reachable from every other vertex
+
+6. disconnected graph - some vertices have no path between them
+
+7. Tree (Special Graph) - A connected graph with no cycle, there will be only one path
+   for any given two vertices
+
+8. complete Graph - Every vertex is connected to other vertex directly
+
+
+Operations - insert, search, traverse
+
+traverse - BFS, DFS
+
+
+How to represent a graph
+
+1. Adjacency Matrix ( other java )
+
+2. Adjacency List ( Java )
+
+
+
+List<Integer> numbers = new ArrayList<>();
+
+List<String> names = new ArrayList<>();
+
+List<Integer> l1 = new ArrayList<>(); 
+l1.of(0,1,1,1); ---> 
+
+List<Integer> l2 = new ArrayList<>(); 
+l2.of(1,0,0,1); ---> 
+
+List<Integer> l3 = new ArrayList<>(); 
+l2.of(1,0,0,1); ---> 
+
+List<Integer> l4 = new ArrayList<>(); 
+l2.of(1,1,1,0); ---> 
+
+
+List<List<Integer>> graph = new ArrayList<>();
+graph.add(l1);
+graph.add(l2);
+graph.add(l3);
+graph.add(l4);
+
+
+Map<String,List> graph = new HashMap<>();
+
+graph.put("v1",l1);
+graph.put("v2",l2);
+graph.put("v3",l3);
+graph.put("v4",l4);
+
+Traversing 
+
+1. BFS -- Breadth First Search  (Queue) 
+
+2. DFS -- Depth First Search (Stack)
+
+DFS starts from a source node, visits one of its neighbor, then continues visiting the
+neighbors until there is no neighbor progress is possible, and then backtracks
+
+It uses stack and recursion
 
 
 
 
+1. Dijkstra's Algorithm
+2. Floyd Warshal Algorithm
 
 
 
 
+Dijksta's Algorithm
+---------------------
+1. Initialize distance of source vertex as 0
+2. Initialize all other distances as  Infinity
+3. Mark all vertices as unvisited
+4. Repeat until all vertices are visited:
+	4.1 Pick the unvisited vertex with min distance
+	4.2 Mark as visited
+	4.3 update distances of its adjacent vertices
 
 
 
+Vertex			distance		Visited
 
+A			 0			x
+
+B			 inf			x
+
+C			 inf			x
+
+D 			 inf			x
+
+E			 inf 			x
+
+update the distance of neighbours from A
+
+Vertex			distance		Visited
+
+A			 0			y
+
+B			 4			x
+
+C			 2			x
+
+D 			 inf			x
+
+E			 inf 			x
+
+
+visit c ( min of 4 and 2 is 2)
+update the disntances of neighbours From c
+
+C --> B = 2 +1 =3 (beter than 4)
+C -> D = 2 + 8 = 10
+C -> 2 + 10 = 12
+
+
+Vertex			distance		Visited
+
+A			 0			y
+
+B			 3			y
+
+C			 2			y
+
+D 			 10			x
+
+E			 12 			x
+
+Step -3 : Visit B
+update the neighbours 
+	
+
+vertex			distance		Visited
+
+A			 0			y
+
+B			 3			y
+
+C			 2			y
+
+D 			 8			y
+
+E			 12			x
+
+Step-4 : visit E
+A -> C 	12
+A - C - B -> D - >E = 10
+
+vertex			distance	    Visited
+
+A			 0			y
+
+B			 3			y
+
+C			 2			y
+
+D 			 8			y
+
+E			 10			y
+
+
+Limitation for Alogrithm - It will not work for negative weights
+
+Time Complexity:  Array - O(v*v)
+
+Priority Queue (Heap ) -- O(V+E Log V)
 
 
 
