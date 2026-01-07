@@ -1,0 +1,106 @@
+utility predefined functional interfaces
+
+1. Predicate
+
+2. Function
+
+3. Consumer
+
+4. Supplier
+
+5. BiConsumer
+
+6. BiFunction
+
+7. BiPredicate
+
+java.util.function;
+
+
+Predicate- Is a functional interface, with only one method called test
+
+@FunctionalInterface
+public interface Predicate<T>{
+	public boolean test(T t);
+}
+
+x -> x%2==0;
+
+class Test{
+	public Boolean isEven(int x){
+		if(x%2==0)
+			return true;
+		else
+			return false;
+	}
+	public Boolean isPrime(int x){
+		// logic to check the prime
+		return true if prime else false;
+	}
+}
+
+Test t = new Test();
+t.isPrime(10);---> true
+t.isPrime(5);----> false
+
+
+Function - It is also a functional interface with one method called apply which will take
+one argument of any type and returns one value of any type
+
+@FunctionalInterface
+public interface Function<T,R> {
+		public R apply(T t);
+}
+
+
+Supplier - It is also a functional interface with one method called get(), it will not take
+any argument but returns a value
+
+@FunctionalInterface
+public interface Supplier<R>{
+	public R get();
+}
+
+Consumer - It is also functional interface with one method called accept, it will take one
+parameter but not returns any value;
+
+@FunctionalInterface
+public interface Consumer<T>{
+	public void accept(T t);
+}
+ 
+
+BiPredicate- It is also a functional interface with only one method called test which will
+take two inputs of any datatype but returns only Boolean value
+
+@FunctionalInterface
+public interface BiPredicate<T1,T2>{
+	public Boolean test(T1 t1, T2 t2);
+}
+
+
+Bifunction - It is also a functional interface with only one method called apply which will
+take two inputs of any datatype and can return any datatype
+
+@FunctionalInterface
+public interface BiFunction<T1,T2,R>{
+	public R apply(T1 t1, T2 t2);
+}
+
+
+
+BiConsumer - It is also a functional interface with only one method called accept which will
+take two parameters of any type and returns none.
+
+@FunctionalInterface
+public interface BiConsumer<T1,T2>{
+	public void accept(T1 t1, T2 t2);
+}
+
+
+
+
+
+
+
+
