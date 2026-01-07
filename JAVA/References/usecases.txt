@@ -51,7 +51,7 @@ Display the registered course IDs using the getRegisteredCourses method.
 
 
 
-Problem Statement 2: Employee Attendance Tracker
+Problem Statement 4: Employee Attendance Tracker
 --------------------------------------------------
 Maria is developing an employee attendance tracking system and wants to store the unique employee IDs that marked attendance for the day. Help Maria by implementing the required functionality using a HashSet to store unique employee IDs. Additionally, take user input to record attendance.
 
@@ -76,3 +76,141 @@ Use a Scanner to take user input for the number of employees marking attendance.
 In a loop, take user input for each employee ID and record it using the markAttendance method.
 
 Display the present employee IDs using the getPresentEmployees method.
+
+
+
+Problem Statement 5: Student Marks Management
+---------------------------------------------
+Rahul is developing a student marks management application and wants to store the marks scored by a student in different subjects. Help Rahul by implementing the required functionality using an ArrayList to store marks. Additionally, take user input to record the marks.
+
+Instructions:
+
+Implement a class named MarksManager with the following features:
+
+A private ArrayList<Integer> named marksList to store student marks.
+
+A constructor that initializes the marksList ArrayList.
+
+A method named addMark(int mark) to add a mark to the ArrayList.
+
+A method named getAllMarks() that returns the ArrayList containing all marks.
+
+In the Main class:
+
+Create an instance of the MarksManager class named marksManager.
+
+Use a Scanner to take user input for the number of subjects.
+
+In a loop, take user input for each subject mark and add it using the addMark method.
+
+Display all the marks using the getAllMarks method.
+
+
+
+Problem Statement 6: Contact List Application
+---------------------------------------------
+Anita is developing a contact list application and wants to store multiple contact names entered by the user. Help Anita by implementing the required functionality using an ArrayList. Additionally, take user input to add contacts.
+
+Instructions:
+
+Implement a class named ContactList with the following features:
+
+A private ArrayList<String> named contacts to store contact names.
+
+A constructor that initializes the contacts ArrayList.
+
+A method named addContact(String name) to add a contact name to the ArrayList.
+
+A method named getContacts() that returns the ArrayList containing contact names.
+
+In the Main class:
+
+Create an instance of the ContactList class named contactList.
+
+Use a Scanner to take user input for the number of contacts.
+
+In a loop, take user input for each contact name and add it using the addContact method.
+
+Display the contact names using the getContacts method.
+
+
+Problem Statement 7: Employee Department Mapping
+------------------------------------------------
+Kevin is developing an employee management system and wants to map employee IDs to their department names. Help Kevin by implementing the necessary functionality using a HashMap. Additionally, take user input to record employee details.
+
+Instructions:
+
+Implement a class named EmployeeDepartment with the following features:
+
+A private HashMap<Integer, String> named employeeMap to store employee ID and department name.
+
+A constructor that initializes the employeeMap HashMap.
+
+A method named addEmployee(int id, String department) to add employee details to the HashMap.
+
+A method named getEmployeeDepartments() that returns the HashMap containing employee details.
+
+In the Main class:
+
+Create an instance of the EmployeeDepartment class named employeeDepartment.
+
+Use a Scanner to take user input for the number of employees.
+
+In a loop, take user input for each employee ID and department name and store it using the addEmployee method.
+
+Display the employee details using the getEmployeeDepartments method.
+
+
+Problem Statement 8: Product Price Catalog
+------------------------------------------
+Sophia is developing a product catalog application and wants to store product IDs along with their prices. Help Sophia by implementing the required functionality using a HashMap. Additionally, take user input to store product details.
+
+Instructions:
+
+Implement a class named ProductCatalog with the following features:
+
+A private HashMap<Integer, Double> named productMap to store product ID and price.
+
+A constructor that initializes the productMap HashMap.
+
+A method named addProduct(int id, double price) to add product details to the HashMap.
+
+A method named getProductDetails() that returns the HashMap containing product information.
+
+In the Main class:
+
+Create an instance of the ProductCatalog class named productCatalog.
+
+Use a Scanner to take user input for the number of products.
+
+In a loop, take user input for each product ID and price and store it using the addProduct method.
+
+Display the product details using the getProductDetails method.
+
+
+
+Problem Statement 9: Unique Email Registration
+----------------------------------------------
+Oliver is developing a user registration system and wants to store the unique email IDs of registered users. Help Oliver by implementing the necessary functionality using a HashSet to store unique email IDs. Additionally, take user input to register emails.
+
+Instructions:
+
+Implement a class named EmailRegistry with the following features:
+
+A private HashSet<String> named emailSet to store unique email IDs.
+
+A constructor that initializes the emailSet HashSet.
+
+A method named registerEmail(String email) to add an email ID to the HashSet.
+
+A method named getRegisteredEmails() that returns the HashSet containing unique email IDs.
+
+In the Main class:
+
+Create an instance of the EmailRegistry class named emailRegistry.
+
+Use a Scanner to take user input for the number of emails to register.
+
+In a loop, take user input for each email ID and register it using the registerEmail method.
+
+Display the registered email IDs using the getRegisteredEmails method.
