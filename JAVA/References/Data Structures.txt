@@ -784,6 +784,269 @@ Step-3 - Negative Cycle Detection
 Time complexity - O(V x E)
 
 
+Algorithm - is a finite step by step procedure to solve a specific problem or perform
+a computation
+
+Algorithm is a clear set of instructions that takes an input , process it logically
+and produces the output
+
+
+Why we need ?
+
+1. Solve problems systematically
+2. Improves the performance and efficiency
+3. Reduces time and memory usage
+4. To build scalable and reliable softwares
+
+Characteristics of a good algorithm
+
+1. Input   -- Takes zero or more inputs
+2. output - Produces atleast one output
+3. Definiteness -- steps are clear and unambigious
+4. finiteness -- Terminates after finite no of steps
+5. effectiveness - steps are simple and executable
+
+
+Time and Space Complexities
+---------------------------
+
+
+Time Complexity - Measures how the running time of an algorithm grows as the input size n increases
+
+It does not measure the actual time in seconds
+
+it measures the growth rate
+
+Why Time Complexity?
+
+1. compare algorithms
+2. predict scalability
+3. efficiency 
+4. avoid performance bottle necks
+
+
+Factors effecting the time complexity
+
+1. Number of loops
+2. Nested Loops
+3. Recursion depth
+4. input size n
+
+
+Cases of Time Complexity
+
+1. Best case -- Minimum time 
+2. Average case -- Normal expected time
+3. Worst Case -- Max time expected
+
+Asymptotic Notations- Describe algoritms behavior for larger input size.
+
+1. Big-O Notation - O(f(n)) -- upper bound - worst case
+
+ for( int i=0;i<n;i++)
+	// task
+
+Time complexity - O(n)
+
+
+O(1) -- constant - Array Acess
+O(log n) -- Logarithmic - Binary Search
+O(n) -- Linear -- Linear Search
+O(n log n) -- Linearthimetic - MergeSort
+O(n*n) -- Qudartic - Bubble Sort
+O(pow(2,n)) -- Exponential - Recursive Fibb
+O(n!) -- Factorial - Travelling Salesmen problem
+
+
+
+2. Big Omega - Omega(f(n)) -  Lower bound - Best case
+   Omega(1) 
+
+
+3. Big Theta - Theta(f(n)) - Tight bound - exact growth - normal case
+   Theta(n)
+
+
+
+
+Space Complexity - Space required for an alogirthm to execute
+
+factors effecting space complexity
+
+1. Variables.
+2. Arrays / Lists
+3. Objects
+4. Recursion Stacks
+
+Types of space complexity
+
+1. constant space - O(1)
+ int a, b, c;
+
+2. Linear space - O(n)
+   int[] array = new int[n];
+
+3. Recursive Space - O(n)
+   void fun(int n){
+	if (n ==0 ) return ;
+	fun(n-1);
+   }
+
+Classification of Algorithms 
+
+1. Design Strategies - refers to how an algorithm approaches and solves a problem.
+	1.1 Brute Force - Try all possible solutions and choose the best one
+			characteristic:
+				-> simple to design	
+				-> Inefficient for large inputs	
+				-> No optimization
+			Examples:
+				-> Linear Search
+				-> Bubble Sort
+				-> Navie String Matching
+			best:
+				->input size is very small
+				-> Simplicity is more important than performance
+
+
+	1.2 Divide and Conquer - Divide the problem into smaller sub problems, solve them independly
+				and combine the results:
+
+			steps: - Divide -- Coqurer -- Combine
+			Examples:
+				-> Binary Search
+				-> Merge Sort
+				-> Quick Sort
+			Best:
+				-> Efficient
+				-> Recursive structure
+	1.3 Greedy Strategy - Make the locally optimal choice at each step, hoping it leads to global 
+				optimum.
+
+			Characteristic:
+				No backtracking
+				Fast Execution
+				May not always give optimal solution
+
+			Examples:
+				Kruskals MST
+				Dijkstra's Algoritm
+		Greedy works only if the problem has the greedy choice property
+
+
+
+
+
+	1.4 Dynamic Programming - Solve problem by breaking them into overlapping sub problems and
+			store results to avoid recomputation
+
+		Key properties:
+			Optimal sub structure
+			Overlapping sub problems
+
+		Examples:
+			finoacci (Dp)
+			Bellman-Ford
+			Floyd-Warshall
+			Knapsack problem
+
+		advantages:
+			Highly Optimized
+			Avoids redundant work
+
+
+	1.5 Backtracking - Try a solution, if it fails go back (backtrack) and try another
+			possible solution:
+
+			Characteriscs:
+				Recursive
+				Systematic Exploration
+
+			examples:
+				N Queens
+				sudoku 
+				Maze problems
+	1.6 Branch and Bound
+	1.7 Randomized Algorithms
+
+2. Problem Types - refers to what kind of problem the algorithm is solving.
+
+ searching problems - Linear Search, Binary Search, Jump Search
+
+Sorting Problems - Arranging the data in an order -- bubble sort, quick, merge
+
+Graph Problems - BFS, DFS, Dijkstra's, BellMan-Ford, Kruskal
+
+Optization Problems - Find the best solution among n
+	Examples: Min spanning best, knapsack, shortest path, Job Scheduling
+
+Decision Problems - Yes or No
+
+Examples - Is it a cycle -- No
+is this graph -- yes
+
+
+Counting Problems: Count number of valid solutions
+
+Examples - Nunber of paths, subsets, inversions
+
+String problems - Process and analyze the text
+Examples - Pattern Matching, Pallindrom check, Longest common sub sequence
+
+
+Numerical Problems - Mathematical computation
+examples - GCD, prime, matrix multiplication
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

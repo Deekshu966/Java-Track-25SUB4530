@@ -1,0 +1,78 @@
+Use Case 1: Home Loan and Personal Loan
+----------------------------------------
+For the clients, Bank XYZ needs to calculate a home loan and a personal loan.
+As a result, the bank has created a Loan class with a loanCalc() method.
+
+To calculate a home loan, the loan amount, number of years, and interest percentage are required as inputs.
+To calculate a personal loan, only the loan amount and interest percentage are required as inputs.
+
+Use the method overloading concept to calculate the total amount payable including interest.
+Finally, print the monthly amount that needs to be paid by the client.
+
+Use Case 2: Vehicle Loan and Business Loan
+----------------------------------------------
+For the clients, Bank XYZ needs to calculate a vehicle loan and a business loan.
+Therefore, the bank has created a Loan class with a loanCalc() method.
+
+To calculate a vehicle loan, the loan amount, loan tenure in years, and interest percentage are required as inputs.
+To calculate a business loan, the loan amount and interest percentage are required as inputs.
+
+Apply the method overloading technique to compute the total amount payable with interest.
+Display the monthly installment amount that the client has to pay.
+
+
+
+Problem Statement 3: Student Course Registration
+-------------------------------------------------
+Alex is developing a student course registration application and wants to record the unique course IDs selected by 
+a student. Help Alex by implementing the necessary functionality using a HashSet to store unique course IDs. Additionally, take user input to register courses.
+
+Instructions:
+--------------
+Implement a class named CourseRegistration with the following features:
+
+A private HashSet<Integer> named courseIds to store unique course IDs.
+
+A constructor that initializes the courseIds HashSet.
+
+A method named addCourseId(int id) to add a course ID to the HashSet.
+
+A method named getRegisteredCourses() that returns the HashSet containing unique course IDs.
+
+In the Main class:
+------------------
+Create an instance of the CourseRegistration class named courseRegistration.
+
+Use a Scanner to take user input for the number of courses to register.
+
+In a loop, take user input for each course ID and register it using the addCourseId method.
+
+Display the registered course IDs using the getRegisteredCourses method.
+
+
+
+Problem Statement 2: Employee Attendance Tracker
+--------------------------------------------------
+Maria is developing an employee attendance tracking system and wants to store the unique employee IDs that marked attendance for the day. Help Maria by implementing the required functionality using a HashSet to store unique employee IDs. Additionally, take user input to record attendance.
+
+Instructions:
+
+Implement a class named AttendanceTracker with the following features:
+
+A private HashSet<Integer> named employeeIds to store unique employee IDs.
+
+A constructor that initializes the employeeIds HashSet.
+
+A method named markAttendance(int id) to add an employee ID to the HashSet.
+
+A method named getPresentEmployees() that returns the HashSet containing unique employee IDs.
+
+In the Main class:
+
+Create an instance of the AttendanceTracker class named attendanceTracker.
+
+Use a Scanner to take user input for the number of employees marking attendance.
+
+In a loop, take user input for each employee ID and record it using the markAttendance method.
+
+Display the present employee IDs using the getPresentEmployees method.
