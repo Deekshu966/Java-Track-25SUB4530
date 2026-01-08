@@ -54,7 +54,8 @@ public class ListTraverseExample {
 		// Traversing using forEach method
 		
 		System.out.println("Traversing using forEach method:");
-		list2.forEach(country -> System.out.println(country));
+		//list2.forEach(country -> System.out.println(country));
+		list2.forEach(System.out::println); // method reference
 		
 		System.out.println("Traversing using Iterator:");
 		Iterator itr = list2.iterator(); // we can traverse only in forward

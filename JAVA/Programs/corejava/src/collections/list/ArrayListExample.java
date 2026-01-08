@@ -10,6 +10,7 @@ public class ArrayListExample {
 		
 		List ar = new ArrayList();
 		//List ar = new LinkedList();
+		
 		ar.add(100);
 		ar.add(200);
 		ar.add("India");

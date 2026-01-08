@@ -1001,21 +1001,65 @@ examples - GCD, prime, matrix multiplication
 
 
 
+List<Integer> nos = new ArrayList<>();
+nos.add(1); nos.add(2); nos.add(3);
+
+System.out.prinltn(nos); ----> [1,2,3]  // one string
+
+Iterator itr = nos.iterator();
+while(itr.hasNext())
+	System.out.println(itr.next());
+
+1
+2
+3
+
+
+
+Towers of Honai
+----------------
+
+It is an divide and conquer approach, recursion and stack 
 
 
 
 
+Step -1 : Take ring-3 from source and keep in destination
+
+Step -2 : take ring-2 from soure and keep in temp pole
+
+step-3: take ring-3 from source and keep it in temp pole
+
+Step-4 : take ring 1 from source and keep it in destination
+
+step-5 : take ring3 and keep in source
+
+step-6 : take ring 2 and keep in destination
+
+step-7 : take ring 3 from source and keep in destination
+
+2n -1 ie pow(2,3) -1 = 7
 
 
 
+Recursive Idea
+
+To move n disks from A --> C using B
+
+1. Move n-1 disks from A -> B (Using c)
+
+2. Move largest disk from A --> C
+
+3. Move N-1 disks from B-->C (Using A)
+
+
+63 --> source to destination is the life span of earth
 
 
 
+Time complexity
 
-
-
-
-
+O(2n -1)
 
 
 
