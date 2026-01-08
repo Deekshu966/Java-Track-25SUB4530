@@ -1,0 +1,74 @@
+Date and Time API
+-----------------
+
+String today = "08-01-2026"
+
+String dday = "18-01-2026"
+
+java.util.Date, Calender;
+
+today + 1--> tomorrow date
+
+1. Mutable ( not thread safe)
+2. Methods don't have readability
+3. Poor time zone handling
+4. hard to read and error prone
+
+
+java8 --> Java8 Date API is introduced -- Joda-Time
+---------------------------------------------------
+
+1. Immutable ( Thread safe)
+2. Clear separation of date, time and zone
+3. Fluent and more readble
+4. Better Time zone support
+
+
+java.time;
+
+1. LocalDate -- provides methods to work with date
+2. LocalTime -- methods to work with time
+3. LocalDateTime - methods to work with both
+4. ZonedDateTime -- Methods to work at diff time zones
+5. Period - Duration With a periods an interval of date --> 
+6. - specific interval of time
+7. DateTimeFormatter -- used to work with diff time and date formats
+
+Date Format Patterns
+-------------------
+
+dd -- day (2 digits) 00, 01, 11, 15 etc
+
+MM - Month Number - 01,02,03,..10,11,12
+
+MMM - Month Short name - Jan, Feb, Mar, Dec
+
+MMMM - Month Full Name - January,, February.. December
+
+yyyy -- 4 digit year - 2026, 2020
+
+yy -- year ( 2 digit) - 26, 20, 31
+
+
+
+
+HH - 24 hour format
+hh - 12 hour format
+a - AM/PM
+
+Period - represents a date-based on amount of time in terms of
+1. year
+2. Months
+3. Days
+
+between()
+
+
+
+
+
+
+
+
+
+
