@@ -122,6 +122,59 @@ Class
 6. getInterfaces() --> Implemented Interfaces
 
 
+Annotations
+-----------
+
+An annotation is a form of metadata that provides additional information about code without
+changing the program's logic
+
+Annotations don't execute code by themselves - they will describe the code
+
+
+@Override -- 
+
+
+Why do we need?
+
+1. Reduce the boilerplate code
+2. Improve the readability
+3. Replaces the xml code // spring
+4. Enable Declarative programming
+
+Examples
+--------
+
+1. @Override --Method
+2. @Entity ---class
+3. @Id --- variable
+2. @FunctionalInterface --interface
+3. @Deprecated -- Methods
+4. @SupressWarnings - superess warnings in the given code -- Methods
+
+
+Userdefined annotations or custom annotaions
+
+step1 - Define the annotation
+
+
+@Rentention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+@interface Myannotation{
+	String value();
+	int version() default 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

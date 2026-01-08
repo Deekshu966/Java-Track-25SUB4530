@@ -98,8 +98,8 @@ public class GenericTest {
 		
 		//List<Double> list = List.of(10.00,20.123,30.234,40.234,50.1);
 		List<String> list = List.of("Hello","hi","swedan","norway");
-		b1.getFirst(list);
-		System.out.println("First Element from the list: " + n);
+		//b1.getFirst(list);
+		//System.out.println("First Element from the list: " + n);
 		
 	}
 
