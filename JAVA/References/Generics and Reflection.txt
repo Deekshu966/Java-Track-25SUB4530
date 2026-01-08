@@ -1,0 +1,123 @@
+Type Saftey - Ensuring that only the correct data type is used at compile time, to 
+prevent runtime errors
+
+without typesaftey;
+
+1. errors occur at runtime
+2. program may fail unexpectedly
+3. Bugs are very hard to detect
+
+
+Generics: Generics is a way which will allows us to write type-safe, reusable and compiletime
+checked code by specifiying type parameters.
+
+Generics can be applied at 
+
+1. class level
+2. Method level
+3. Variable Level - This is achieved through class or method levels only
+
+class Box<T>{
+	private T data;
+	void set(T data){
+		this.data = data;
+	}
+	T get(){
+		return data;
+	}
+}
+
+Box box = new Box();  // error
+Box<Integer> b1 = new Box();
+Box<Float> b2 = new Box();
+Box<Double> b3 = new Box();
+
+
+Box<String> b2 = new Box();
+
+b1.set(10);
+sop(b1.get());--> 10
+
+
+b2.set("hello");
+sop(b2.get());
+
+
+Integer --> string, Boolean, Complex class is completely diff
+
+Integer --> float, double  --> Number
+
+upper bound wild cards ---> An upper bound wildcard restricts the generic type to the specific class
+and its Sub classes only
+
+
+Number ----> Integer,Float, double
+
+Employee --> PermannentEmployee and TempEmployee
+extends -- used to specifiy the wild card
+
+class TestEmployee<TempEmployee >{
+
+
+
+
+}
+
+
+
+class Box<T extends Number>{
+	private T data;
+	void set(T data){
+		this.data = data;
+	}
+	T get(){
+		return data;
+	}
+}
+
+
+
+Java Reflection
+----------------
+
+Java Reflection is an API that allows a program to:
+
+Inspect, analyze, and manipulate classes, methods, fields and constructors at runtime
+even if they are private
+
+
+why do I need Reflection:
+
+Java is statically typed class structure which is fixed at compile time:
+
+Reflection allows:
+
+1. framework development
+2. dynamic object creation
+3. Method invocation without knowing class in advance
+4. Dependency Injection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
