@@ -99,6 +99,150 @@ public interface BiConsumer<T1,T2>{
 
 
 
+Method References
+-----------------
+class Test{
+	
+	public static int addition(int a, int b){
+		return a+b;
+	}
+}
+
+Test t = new Test();
+t.addition(10,20);
+
+
+(a,b) -> a+b;
+
+interface Maths{
+	int add(int a, int b);
+}
+
+Maths m = (a,b) -> a+b;
+
+
+
+//Test t = new Test();
+Maths m = t::addition; // this reference will be will if the method is non static 
+// ie non static method reference are given through its object
+
+
+Maths m = Test::addition; // Static method references can be given on class itself
+
+Sop(m.add(10,20));
+
+
+stream-- IO Streams---> input and output
+Collection streams
+
+
+Streams
+-------
+
+Stream is a concept used to process the collections from java8 onwards
+collection streams are used to process the collections
+
+
+In processing the data 
+
+1. filter -- check some condition based on condition we will filter the values
+
+2. map - we perform some common operation on all the values
+
+any collection object can be converted into stream using stream();
+stream() is available in collection interface
+
+List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+filter methods are used to check the conditions
+
+Predicate<Integer> p = x -> x%2==0;
+Sop(p.test(10));---> true
+Sop(p.test(11)); ---> false
+
+List<Integer> even = numbers.stream()
+			    .filter(x -> x%2==0)
+		            .collect(Collectors.toList());
+    
+
+
+Function<Integer,Integer> f = x -> x+1;
+
+sop(f.apply(10)); ---> 11
+
+List<Integers> result = numbers.stream()
+       .map(x -> x+1)
+       .collect(Collectors.toList());
+sop(result);
+
+
+List<Integer> data = numbers.stream()
+       			    .filter(p)
+                            .map(f)
+                            .collect(Collectors.toList());
+
+sop(data)
+
+
+
+Intermediate Methods in Stream
+
+1. filter
+2. map
+
+
+Terminal Methods
+
+Collect Methods
+----------------
+Collect()
+
+Iteration Methods
+---------------
+forEach()
+
+Aggregation Methods
+--------------------
+1. count --> It returns the number of elements satisfiying the confiditon
+2. max --> It returns the right most element in the stream
+3. min --> It returns the left most element in the stream
+
+Find Methods
+------------
+
+1.findFirst()
+2. findAny()
+
+
+Matching Methods
+----------------
+1. anyMatch()
+2. allMatch()
+3. noneMatch()
+
+numbers = [1,2,3,4,5,6,7,8,9,10,43]
+
+numbers.stream().anyMatch(n -> n%==0);--> true
+
+numbers.stream().anyMatch(n -> n>20);--> true
+
+
+data =[10,20,30,40];
+
+data.stream().allMatch(x ->x%10==0);  // true 
+
+data =[10,20,30,40,45];
+data.stream().allMatch(x ->x%10==0);  // false since 45 is not divisible by 10
+
+
+data =[10,20,30,40];
+data.stream.noneMatch(x -> x <0);// true
+
+
+data =[10,20,30,-1,40];
+data.stream.noneMatch(x -> x <0);// false
+
+
 
 
 

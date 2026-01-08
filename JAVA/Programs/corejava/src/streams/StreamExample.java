@@ -43,6 +43,15 @@ public class StreamExample {
    			    					.collect(Collectors.toList());
 		System.out.println("Even Numbers Incremented by 1 using Predicate and Function: " + data);
 
+		// Max will find the right most element from the given stream
+		// [1,2,3,4,5,6,8,9,10]--> max -->8
+		//[10,9,8,7,6,5,4,3,2,1] --> max --> 1
+	//	int max = numbers.stream().max(Integer::compare).get();
+		int max = numbers.stream().max((a,b)->-(a-b)).get();
+		System.out.println("Max value from the stream: " + max);
+		//int min = numbers.stream().min(Integer::compare).get();
+		int min = numbers.stream().min((a,b)->-(a-b)).get();
+		System.out.println("Min value from the stream: " + min);
 
 	}
 

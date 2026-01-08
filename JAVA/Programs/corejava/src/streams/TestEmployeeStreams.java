@@ -1,8 +1,8 @@
 package streams;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 import java.util.stream.Collectors;
 
 public class TestEmployeeStreams {
@@ -17,6 +17,16 @@ public class TestEmployeeStreams {
 		Employee e5 = new Employee(1005, "David Wilson", "Marketing", 68000);
 		
 		List<Employee> employees = List.of(e1, e2, e3, e4, e5);
+		List<Employee> empls = new ArrayList();
+		empls.add(e1);
+		//empls.add(false);
+		
+		
+		List emps = new ArrayList();
+		emps.add(e1);
+	//	emps.add(10);
+	//	emps.add(false);
+		
 		
 		// Print all employee names
 		employees.forEach(System.out::println);
