@@ -98,6 +98,46 @@ Reflection allows:
 4. Dependency Injection
 
 
+core reflection class --> java.lang.reflect;
+
+Class -- Metadata of a class
+Method - Method information
+Field -- Field Information
+Constructor - constructor information
+
+Class<?> c1 = Student.class;
+
+Class<?> c1 = s.getClass();
+
+Class<?> c1 = Class.forName("com.example.Student");
+
+Class 
+----
+
+1. getMethods() -- All public methods in the class
+2. getClaredMethods() -- All methods declared in the class only
+3. getMethod() ---> get a specific Method
+4. getDelcaredmethod() -- Get a specific method declared
+5. getSuperClass() -- parent class info
+6. getInterfaces() --> Implemented Interfaces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
