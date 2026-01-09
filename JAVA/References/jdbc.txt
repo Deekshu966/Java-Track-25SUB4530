@@ -1,0 +1,92 @@
+JDBC - Java DataBase Connectivity
+
+java based api (application progrming interface)  to connect to any other databases
+
+java.sql.*;
+
+SQLException
+
+Types of Drivers
+
+1. Type-1 ( JDBC - ODBC Bridge) (outdate)
+
+2. Type-2 (Partly Java - Partly native API) (deprecated)
+
+3. Type-3 (Net protocol ) (protocol for networking)
+
+4. Type-4 (Pure Java) --(Standard driver)
+
+
+Write the java program ----> work with databases
+
+
+Create a table
+
+inserting a record into table
+
+display some/all the records from the table
+
+updating some / all records
+
+deleting the records
+
+
+DDL Operations - create, truncate, alter
+DML Operations - update, delete
+DQL - Select
+
+
+
+classes and interfaces we use in jdbc 
+
+1. Connecion
+2. DriverManager
+3. Statement - PreparedStatement, CallableStatement
+4. ResultSet
+
+
+steps to connect to database:
+
+1. Load the jdbc driver
+
+2. create a connection object
+
+3. create a statement object
+
+4. write a query,execute a and fetch the result
+
+5. process the result
+
+6. close the objects
+
+
+
+int fact(int x){
+
+	// processing
+	return val;
+}
+
+int k = fact(10);
+
+ResultSet
+
+.jar files
+
+
+
+
+executeQuery ---> when we have select / create statement in query
+
+executeUpdate --> when our query has dml statements
+
+
+
+right click on project ---> build path ---> configure the build path -->
+select the libraries tab ---> click on classpath --> add external jars button -->
+browse and select the downloaded jar file --> Apply and close
+
+
+
+
+
