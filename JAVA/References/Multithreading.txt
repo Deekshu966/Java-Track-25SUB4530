@@ -1,0 +1,174 @@
+Multithreading
+JDBC
+
+Multi Threading - It is the process of simultenously executing the parts 
+of the same program
+
+
+Multi Tasking -
+
+
+Notepad
+Teams
+Downloads 
+
+application ---> processor 
+
+single processor can execute only one job at a time
+
+OS -- Job Scheduling
+
+OS Level -- Simultenously executing the jobs
+
+
+Programming
+
+program begin
+s1-->task1 begin
+s2
+s3---> Interrupt --. read a value from keyboard  Thread-1
+s4
+s5--->task1 end
+s6---> task2 begin
+s7
+s8			Thread-2
+s9
+s10--> tasks2  end
+s11---> task3 begin
+s12
+s13			Thread-3
+s14
+s15--> tasks3  end
+
+program end
+
+Thread --> it is a light weight process under execution
+
+cases in which Thread will go from Running state to Idle state
+
+1. Sleep(1000) method call
+
+2. When there is an IO Interrrupt
+
+3. When a thread is called by wait()
+
+How to create a thread in java
+
+Thread can be created in 2 ways:
+
+1. Thread class - in java.lang package which contains all thread life cycle methods
+
+2. Runnable Interface - A functional interface which has only method called run
+
+public void run(){
+
+}
+
+Thread Scheduler-- is a process which is responsible for implementing
+Multithreading
+
+
+Any runtime errors are handled by using a predefined exception called
+
+InterruptedException
+
+
+Suggested or standard way to create a thread is by using runnable interface
+
+1. In thread class approach, we mixing both thread logic and task logic together
+
+
+ExecutorFramework works only with Runnable / Callable interfaces
+
+
+Thread methods
+
+1. run()
+2. start()
+3. sleep()
+
+Thread priorities range from 1 to 10
+
+1 being lowest
+10 is highest
+
+t1--> 1  ---> public 5
+t2---> 5 ---> MLA/ MP 
+t3---> 10---> Minister 
+1 -- 5 -- 10
+if you create any thread --> default priority of 5
+
+getPriority()
+setPriority(int priority)
+
+join() -join makes the current thread to wait until the target thread finishes
+the execution
+
+
+
+
+yield() -- It will the other thread to wait until the current thread finishes
+
+Synchronization()
+------------------
+
+It is the process of control access to shared resources so that only one
+thread executes at a time
+
+
+Java locks the resource and monitors
+
+synchronized keyword is used to achieve the sychornization
+
+1. Object level
+2. method level
+3. block level
+
+class counter{
+	int count=0;
+	synchronized void increment(){
+		count++;
+	}
+}
+
+
+class counter{
+	int static counter;
+	
+	synchronized {
+		counter++;
+	}
+	public void showcouner(){
+		Sop(couter);
+	}
+}
+
+synchronize(obj);
+
+preferred way of synchronization is at block level
+
+Producer - Consumer Problems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
