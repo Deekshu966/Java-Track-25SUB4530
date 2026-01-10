@@ -15,14 +15,14 @@ public class InsertData {
 		
 		Connection com =
 				DriverManager.getConnection("jdbc:mysql://localhost:3306/wiprodbs","root","your_password");
-
+		
 		//2. Create the Statement
 		Statement st = com.createStatement();
 		
 		String sql = "INSERT INTO employees VALUES (19, 'John Doe', 'HR')";
 		
 		//3. Execute the Query
-		int k = st.executeUpdate(sql);
+		int k = st.executeUpdate(sql);  // auto comitted
 		if(k>0)
 			System.out.println("Record Inserted Successfully");
 		else

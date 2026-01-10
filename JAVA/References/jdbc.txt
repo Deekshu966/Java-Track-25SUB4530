@@ -87,6 +87,103 @@ select the libraries tab ---> click on classpath --> add external jars button --
 browse and select the downloaded jar file --> Apply and close
 
 
+Methods in Statement
+---------------------
+ResultSet  executeQuery(sql)----> if the query is select command 
+
+
+executeUpdate(sql)---> if the query is any dml (insert, update, delete)
+execute(sql)---------> if the query is dml (create, truncate, alter)
+
+
+
+Statement --> when the query(dml,ddl,select)  is static, then we need to use Statement object
+
+
+PreparedStatement - when the query(dml,ddl,select) is dynamic ie query values are given at runtime then we need to use PreparedStatement
+
+Pre compiled object
+
+
+CallableStatement - This object is used to execute stored procedures in the database
+
+
+Oracle
+procedures
+function
+triggers
+
+
+
+MetaData --> DatabaseMetaData
+JDBC has this DatabaseMetaData provision such that it gives additional information like
+1. Database name and version
+2. Tables and its names
+3. Tables and its column numbers and types
+4. Indexes
+5. SQL features
+
+to get database meta data
+
+Connection con = DriverManager.getConnection(url,uname,pwd);
+DatabaseMetaData dbmd = con.getMetaData();
+
+getDatabaseProductName() ---> type of database -- MySQL or Oracle, MongoDb
+
+getDatabaseProductVersion() ---> version
+
+getDriverName() --> Driver we are using
+
+getDriverVersion() -->
+
+dbmd.getTables()
+
+dbmd.getColums(table)
+
+dbmd.getPrimaryKey(table)
+
+ResultSetMetaData -- information about the specific table or table return by the select command
+--> ColumnCount
+-ColumnNames
+Data Types 
+Nullable 
+Column size
+
+
+
+
+s1;<-----start
+s2
+s3
+s4
+s5
+s6
+s7
+s8 <-----End
+commit()
+
+
+
+commit()
+rollback()
+
+try{
+setAutocommit(false);
+
+
+commit();
+}
+catch(){
+
+
+rollback();
+}
+
+finally{
+
+
+}
+
 
 
 
