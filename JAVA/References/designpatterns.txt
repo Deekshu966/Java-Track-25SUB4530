@@ -1,0 +1,40 @@
+Design Patterns
+---------------
+
+Design patterns are proven, reusable solutions to a commonly accuring software design
+problems.
+
+They are not code libraries
+Not frameworks
+Best practice
+
+
+Categories of Desgin Patterns
+
+1. Creational  -  Object creation 
+	- Singleton
+
+2. Structural  -  Object composition
+	- Adapter
+
+3. Behavioral -   Object interaction 
+	- Observer
+
+
+Singleton - Singleton pattern ensures that a class has only ONE instance and provides a
+global access point to it
+
+
+when do we use this?
+
+1. Database Conneciton
+2. Logger
+3. configuration Management
+4. Cache
+5. Thread pool
+
+
+
+
+
+
