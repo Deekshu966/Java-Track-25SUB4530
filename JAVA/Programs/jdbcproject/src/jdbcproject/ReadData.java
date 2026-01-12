@@ -1,21 +1,29 @@
 package jdbcproject;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 public class ReadData {
 
-	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
 		// TODO Auto-generated method stub
-		String url = "jdbc:mysql://localhost:3306/wiprodbs";
-		String username = "root";
-		String password="your_password";
+		
+		Properties props = new Properties();
+		FileInputStream fis = new FileInputStream("d://jdbc/db.properties");
+		props.load(fis);
+		String url =props.getProperty("db.url");
+		String username = props.getProperty("db.username");
+		String password=props.getProperty("db.password");
+		String driver = props.getProperty("db.driver");
 		
 		//1. Load the Driver
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName(driver);
 		// com.oracle.driver.OracleDriver
 		
 		// 2. Create the Connection
