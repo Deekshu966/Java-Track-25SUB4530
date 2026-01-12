@@ -1,0 +1,128 @@
+File IO
+
+File is a large memory space set in secondary memory
+
+Database is used to store structured data
+
+Files are un structured data
+
+Files are created and managed by OS by default
+
+File Handling concept in high level lang 
+These lang programs are acting as interfaces to read data / to write to memory
+
+
+user --------------- Program ( C, C++, Java) --------------- Operting System ---------------------- Memory
+
+
+
+
+Source <------------------ Program ---------------> destination
+
+
+Input Devices (Keyboard) ------------------> program --------------> output devices (Monitor)
+
+
+File ----------------------------> program -------------> output devices
+
+
+Input Device --------------------> program --------------> File
+
+
+File -------------------------------> Program ------------> File
+
+
+IO Streams
+
+continuous flow of bits ---> Stream
+
+
+Broadly 
+1. Input Stream
+2. Output Stream
+
+
+input stream ---------------> java program will read from input stream, process it ---------->output stream
+
+
+
+File -----------> file input Stream
+
+java nio
+
+java.io
+java.nio.file
+java.util
+
+
+try catch block or throws
+
+IOException, ClassNotFoundException, FileNotFoundException, 
+
+Most Imp classes for IO
+
+1. File
+2. FileWriter
+3. FileReader
+4. BufferedWriter
+5. BufferedReader
+6. FileOutputStream
+7. FileInputStream
+
+
+File Methods
+-------------
+1. createNewFile -  creates a new File
+
+2. exists() -- check if file exists or not
+
+3. mkdir() ---creates a directory
+
+4. mkdirs () -- creates a directory + partents
+
+5. geName() --return name of file
+
+6. getPath() -- Relative path
+
+7. getAbosolutePath -- Full Path
+
+8. length() -- size of the file
+
+9. lastModified() --- last modifed time
+
+10. canRead --- read permission
+
+11. canWrite ---write permission
+
+12. canExecute -- can execute 
+
+
+13. delete() 
+
+14. list() -- list s files in the current directory
+
+15. listFiles() --> returns all the files in the form a list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

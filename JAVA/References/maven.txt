@@ -1,0 +1,56 @@
+1. File IO 
+2. Junit - Unit testing framework
+3. Memory Management
+4. Maven
+
+Maven
+
+Apache maven is a build automation and dependency management tool primarily used for java project
+
+Maven provides
+
+1. Manages dependencies
+
+2. standardizes project structure
+
+3. Automates build, test, package and deploy phases
+
+4. Works using convention over configuration
+
+
+
+JAR ---> Java ARchiveval 
+
+.code 
+
+Maven
+
+1. Validate 
+2. compile
+3. test
+4. package
+5. verify
+6. install
+7. deploy
+
+
+maven commands
+1. mvn --version
+2. mvn <lifecylce-phase>
+   mvn clean 
+   mvn compile
+   mvn install
+   mvn clean install
+   mvn archetype:generate
+
+
+
+mvn archetype:generate -DgroupId=com.exmaples -DartificatId=mvndemo -Dversion=1.0-SNAPSHOT -DarchetypeArtifactId=
+maven-archetype-quicistart -DinteractiveMode=false
+
+
+
+
+
+
+
